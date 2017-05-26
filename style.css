@@ -1,0 +1,112 @@
+li {
+  list-style: none;
+}
+
+body {
+  background: black;
+}
+
+header {
+  background: black;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+}
+
+
+.menu {
+  float: left;
+  height: 30px;
+  left: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.menu>img {
+  height: 30px;
+  width: 30px;
+}
+
+header>div>h1 {
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: white;
+  font-family: fantasy;
+}
+
+.header.border {
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  height: 5px;
+  width: 600px;
+  border-radius: 5px;
+}
+
+header>div>ul {
+  float: right;
+  height: 50px;
+  width: 150px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header>div>ul>li {
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+header>div>ul>li>img {
+  height: 30px;
+  width: 30px;
+}
+
+.header {
+  background: white;
+}
+
+.hidden.master{
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 50px;
+  width: 200px;
+  height: 800px;
+  background: white;
+  visibility: hidden;
+}
+
+.hidden.dropdown {
+  width: 200px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  background: white;
+}
+
+.hidden.dropdown p {
+  margin: 0px;
+  border: 0px;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+.hidden.dropdown:first-child{
+  margin-top: 50px;
+}
+
+.hidden.dropdown:hover {
+  background: black;
+  color: white;
+}
