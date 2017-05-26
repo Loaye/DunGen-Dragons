@@ -1,0 +1,45 @@
+*{
+  outline:1px dotted;
+}
+
+form{
+  width:960px;
+  height:100%;
+  margin:0 auto;
+}
+
+#char-meta{
+  display:inline-block;
+}
+
+#char-meta input:last-child{
+  width:50px;
+}
+
+#char-background{
+  float:right;
+  width:550px;
+}
+
+#char-background lable{
+  margin:3px;
+}
+
+#char-background input{
+  width:50px;
+}
+
+#stats{
+  width:100px;
+  height:300px;
+}
+
+#stats figure{
+  float:left;
+  margin:20px;
+}
+
+#stats input{
+  width:100px;
+
+}
