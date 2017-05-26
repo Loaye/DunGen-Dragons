@@ -120,6 +120,18 @@ main {
   height: 800px;
   margin: auto;
 }
+
+.main h2 {
+  color: white;
+  height: 30px;
+  width: 800px;
+  float: left;
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
 .main.option {
   width: 400px;
   height: 400px;
@@ -128,7 +140,7 @@ main {
   margin-top: 50px;
 }
 
-.main.option:first-child {
+.main>:nth-child(2) {
   margin-left: 60px;
 }
 
