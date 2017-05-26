@@ -1,10 +1,24 @@
-var hidden = document.getElementsByClassName('hidden master')[0];
-var menu = document.getElementsByClassName('header menu')[0];
+function CharClass(className, stats, description, abilities) {
+  this.name = className;
+  this.stats = stats;
+  this.description = description;
+  this.abilities = abilities;
+}
 
-menu.addEventListener('click', function() {
-  if (hidden.style.visibility === 'hidden') {
-    hidden.style.visibility = 'visible';
-  } else {
-    hidden.style.visibility = 'hidden';
-  }
-});
+function Race(race, stats, description, abilities) {
+  this.race = race;
+  this.stats = stats;
+  this.description = description;
+  this.abilities = abilities;
+}
+
+var classInstance = new CharClass();
+var raceInstance = new Race();
+
+function Player(name, playerClass, playerRace) {
+  this.name = name;
+  this.playerClass = playerClass;
+  this.playerRace = playerRace;
+}
+
+var testPlayer = new Player('Bill Cosby', classInstance, raceInstance);
