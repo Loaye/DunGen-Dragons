@@ -110,3 +110,35 @@ header>div>ul>li>img {
   background: black;
   color: white;
 }
+
+main {
+  margin-top: 90px;
+}
+
+.main.master {
+  width: 960px;
+  height: 800px;
+  margin: auto;
+}
+.main.option {
+  width: 400px;
+  height: 400px;
+  background: white;
+  float:left;
+  margin-top: 50px;
+}
+
+.main.option:first-child {
+  margin-left: 60px;
+}
+
+.divider {
+  height: 400px;
+  width: 10px;
+  background: white;
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
