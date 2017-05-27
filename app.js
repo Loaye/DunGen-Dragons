@@ -1,8 +1,12 @@
+var allRaces = [];
+var allClasses = [];
+
 function CharClass(className, stats, description, abilities) {
   this.name = className;
   this.stats = stats;
   this.description = description;
   this.abilities = abilities;
+  allClasses.push(this);
 }
 
 function Race(race, stats, description, abilities) {
@@ -10,6 +14,7 @@ function Race(race, stats, description, abilities) {
   this.stats = stats;
   this.description = description;
   this.abilities = abilities;
+  allRaces.push(this);
 }
 
 var classInstance = new CharClass();
