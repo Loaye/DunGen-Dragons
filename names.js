@@ -6,46 +6,51 @@ function Player(){
 var names = [
   [ // Dragonborn [0]
   // First names [0]
-    ['Andonar', 'Armek', 'Axaran', 'Dohazar', 'Eratax', 'Grax', 'Iskan', 'Ix', 'Loraqen', 'Narith', 'Nesdaar', 'Razaan', 'Sarax', 'Sevesh', 'Sirazan', 'Solroth', 'Xyrstan', 'Xyryx', 'Zarkhil', 'Zor', 'Zeronath'],
+    ['Andonar', 'Aranax', 'Armek', 'Axaran', 'Dohazar', 'Eratax', 'Grax', 'Iskan', 'Ix', 'Loraqen', 'Narith', 'Qor', 'Qotho', 'Nesdaar', 'Razaan', 'Sarax', 'Seev', 'Sevesh', 'Sirazan', 'Solroth',
+      'Xax', 'Xyrstan', 'Xyryx', 'Zarkhil', 'Zeven', 'Zor', 'Zeronath'],
   // Surnames [1]
     ['Aksu', 'Baykal', 'Celik', 'Demir', 'Erbil', 'Gomec', 'Gul', 'Kaplan', 'Kaya', 'Kirca', 'Mansur', 'Muhtar', 'Oyal', 'Ozdemir', 'Pekkan', 'Polat', 'Sahin', 'Senturk', 'Yilmaz']
   ],
   [ // Dwarf [1]
   // First names [0]
-    ['Algis', 'Alma', 'Balder', 'Breora', 'Broden', 'Davak', 'Dunik', 'Dwalo', 'Furos', 'Halden', 'Hilder', 'Ingleth', 'Kravar', 'Ludo', 'Marda', 'Norik', 'Olaver', 'Orik', 'Rorin',
-      'Stilda', 'Taril', 'Therstine', 'Thoster', 'Walga', 'Wellam', 'Yanice'],
+    ['Algis', 'Alma', 'Balder', 'Beor', 'Breora', 'Broden', 'Davak', 'Dunik', 'Dur', 'Dwalo', 'Elmar', 'Furos', 'Golben', 'Halden', 'Harrow', 'Hilder', 'Hothor', 'Ingleth', 'Kravar', 'Ludo',
+      'Marda', 'Norik', 'Olaver', 'Orik', 'Rorin', 'Stilda', 'Taril', 'Therstine', 'Thoster', 'Vargo', 'Walga', 'Wellam', 'Wulf', 'Yanice'],
   // Surnames [1]
-    ['Alebelly', 'Battlebeard', 'Deepdweller', 'Destinaxe', 'Dugdeep', 'Forgemaster', 'Giantsbane', 'Greybeard', 'Hammerfall', 'Mineshadow', 'Mountainfoot', 'Mudbeard', 'Oreseer', 'Redbeard', 'Rubymace', 'Sharpsteel', 'Stoneheart', 'Stonekin', 'Stoutshield', 'Wrymsbane']
+    ['Alebelly', 'Battlebeard', 'Beerbreath', 'Cleftbelly', 'Deepdweller', 'Destinaxe', 'Diamondtooth', 'Dirteater', 'Dirtfoot', 'Dugdeep', 'Firebeard', 'Forgemaster', 'Gemseeker', 'Giantsbane', 'Goldforge', 'Goldglory', 'Greybeard', 'Hammerfall', 'Hammerfist', 'Mineshadow', 'Mountainfoot',
+      'Mudbeard', 'Mudmouth', 'Oreseer', 'Redbeard', 'Rubymace', 'Sharpsteel', 'Snowbeard', 'Stoneheart', 'Stonekin', 'Stonewalker', 'Stoutshield', 'Warheart', 'Wrymsbane']
   ],
   [ // Elf [2]
   // First names [0]
-    ['Adrieth', 'Aiona', 'Alonon', 'Aphyra', 'Arasys', 'Atalya', 'Brekahn', 'Cazerios', 'Daewin', 'Fenric', 'Gaerlan', 'Hadir', 'Ilmaris', 'Lyndor', 'Miraren', 'Nerisaia', 'Quilana', 'Quokas', 'Remora', 'Savian',
-      'Seylas', 'Sylwen', 'Tarawyn', 'Valthana', 'Vynora', 'Xyrmas', 'Veryas', 'Yesrieth', 'Yewen'],
+    ['Adrieth', 'Aerion', 'Aiona', 'Alonon', 'Aphyra', 'Arasys', 'Atalya', 'Avala', 'Brekahn', 'Cazerios', 'Daewin', 'Fenric', 'Gaerlan', 'Hadir', 'Ilmaris', 'Lyndor', 'Miraren', 'Nerisaia', 'Quilana', 'Quokas',
+      'Remora', 'Savian','Seylas', 'Sylwen', 'Tarawyn', 'Valthana', 'Vynora', 'Xyrmas', 'Veryas', 'Yesrieth', 'Yewen'],
   // Surnames [1]
-    ['Arcanlore', 'Autumnloft', 'Brightsoul', 'Darkbrow', 'Dawnslight', 'Eldertree', 'Evenwind', 'Fallentree', 'Greenleaves', 'Hawkfriend', 'Loreweaver', 'Moonshadow', 'Moonheart', 'Runekeeper', 'Spellsayer', 'Starsoul', 'Summergale', 'Summersong', 'Sunshadow', 'Waterdancer',
-      'Whisperwind', 'Woodsoul']
+    ['Arcanlore', 'Arcanscape', 'Autumnloft', 'Brightsoul', 'Darkbrow', 'Dawnslight', 'Eldertree', 'Evenwind', 'Fallentree', 'Flamedancer', 'Greenleaves', 'Hawkfriend', 'Lightkeeper', 'Loreweaver', 'Moonshadow', 'Moonheart', 'Runekeeper', 'Shadowstepper', 'Spellsayer', 'Starseer',
+      'Starsoul', 'Summergale', 'Summersong', 'Sunshadow', 'Sunstrider', 'Waterdancer', 'Whisperwind', 'Woodsoul']
   ],
   [ // Half-Orc [3]
   // First names [0]
-    ['Aruk', 'Cledd', 'Dagmar', 'Dagron', 'Fangor', 'Gezza', 'Grathas', 'Grell', 'Grok', 'Hrosh', 'Kajdak', 'Magdar', 'Majra', 'Mojek', 'Ravash', 'Stoga', 'Stromrel', 'Takor', 'Thakda', 'Thraish',
-      'Thuma', 'Togrr', 'Udonak'],
+    ['Aruk', 'Brogg', 'Cledd', 'Dagmar', 'Dagron', 'Drak', 'Fangor', 'Garash', 'Gezza', 'Grathas', 'Grell', 'Grok', 'Hrosh', 'Kajdak', 'Koldash', 'Krovarr', 'Lurg', 'Magdar', 'Majra', 'Mojek',
+      'Rashgar', 'Ravash', 'Shrag', 'Stoga', 'Stromrel', 'Takor', 'Thakda', 'Thraish', 'Thuma', 'Togrr', 'Udonak', 'Urdogg', 'Volg'],
   // Surnames [1]
-    ['Beastbane', 'Blackclaw', 'Bloodfist', 'Bloodmare', 'Bloodtusk', 'Brokenbone', 'Crushmaw', 'Darkblood', 'Deadeye',  'Frostblood', 'Grimrot', 'Quickdeath', 'Rotflesh', 'Sharptooth', 'Steelskin', 'Stonefist', 'Tornskull', 'Venomtooth', 'Wolfsbane']
+    ['Beastbane', 'Blackclaw', 'Bloodfist', 'Bloodmare', 'Bloodtusk', 'Bonebreaker', 'Brokenbone', 'Craterface', 'Crushmaw', 'Darkblood', 'Deadeye', 'Deathbringer', 'Deathscream', 'Dragonmaw', 'Fleshrend', 'Frostblood', 'Grimdark', 'Grimrot', 'Hellheart', 'Quickdeath',
+      'Rotbreath', 'Rotflesh', 'Scarskin', 'Sharpclaw', 'Sharptooth', 'Shatterhand', 'Shiverflesh', 'Steelskin', 'Stonefist', 'Tornskull', 'Venomtooth', 'Wargbite', 'Wolfsbane']
   ],
   [ // Halfling [4]
   // First names [0]
-    ['Andrey', 'Bolo', 'Bree', 'Cailynn', 'Darry', 'Davin', 'Derrin', 'Dayra', 'Edda', 'Emela', 'Farwick', 'Hollis', 'Joren', 'Kad', 'Katrin', 'Laina', 'Lindy', 'Lira', 'Lodor', 'Mathel',
-      'Mirabella', 'Norn', 'Orlo', 'Perrin', 'Pippa', 'Pruella', 'Rosna', 'Rosree', 'Sammel', 'Tilly'],
+    ['Andrey', 'Bolo', 'Bree', 'Cailynn', 'Darry', 'Davin', 'Derrin', 'Dayra', 'Edda', 'Emela', 'Farwick', 'Gordo', 'Grinley', 'Hollis', 'Holly', 'Jemma', 'Jollo', 'Joren', 'Kad', 'Katrin',
+      'Laina','Lindy', 'Lira', 'Lodor', 'Lumo', 'Margo', 'Mathel', 'Mirabella', 'Norn', 'Orlo', 'Perrin', 'Pippa', 'Pruella', 'Rando', 'Rosna', 'Rosree', 'Sammel', 'Tilly', 'Tulip', 'Walda',
+      'Wellen', 'Wimsy', 'Yara'],
   // Surnames [1]
-    ['Angler', 'Burrows', 'Fieldhand', 'Fleetfoot', 'Gardner', 'Goldweaver', 'Hollowpot', 'Lightshield', 'Littlefoot', 'Oleander', 'Overjoy', 'Proudlaugh', 'Puddleskipper', 'Riverwalker', 'Saddler', 'Shortcloak', 'Shortstride', 'Skiprock', 'Surefoot', 'Swiftstream',
-      'Tallcup', 'Tallheart', 'Tumblebelly', 'Widesmile', 'Willow']
+    ['Angler', 'Burrows', 'Fieldhand', 'Fleetfoot', 'Gardner', 'Goldweaver', 'Hollowpot', 'Lightshield', 'Littlefoot', 'Oleander', 'Overjoy', 'Proudlaugh', 'Puddleskipper', 'Riverwalker', 'Saddler', 'Shortcloak', 'Shortstride', 'Skiprock', 'Summersun',
+      'Surefoot', 'Swiftstream', 'Tallcup', 'Tallheart', 'Tumblebelly', 'Underfoot', 'Widesmile', 'Weepingwillow', 'Willow']
   ],
   [ // Human [5]
   // First names [0]
-    ['Airies', 'Ander', 'Araatris', 'Cassad', 'Belina', 'Belthas', 'Derwin', 'Donnel', 'Dyanna', 'Edrick', 'Jeren', 'Lano', 'Lorik', 'Kadren', 'Khalar', 'Maeris', 'Marden', 'Merdir', 'Raldun', 'Rhakhar',
-      'Ricard', 'Ricnan', 'Robard', 'Rollam', 'Sileva', 'Treya', 'Tyran', 'Uthar', 'Verin', 'Waldyn', 'Werrin', 'Wyllam'],
+    ['Airies', 'Ander', 'Araatris', 'Belina', 'Belthas', 'Beneth', 'Berec', 'Cassad', 'Darvin', 'Derwin', 'Donnel', 'Dyanna', 'Edrick', 'Jeren', 'Kadren', 'Khalar', 'Lano', 'Lorik', 'Maeris', 'Marden',
+      'Merdir', 'Raldun', 'Rhakhar', 'Ricard', 'Ricnan', 'Robard', 'Rollam', 'Sileva', 'Treya', 'Tristam', 'Tyran', 'Uthar', 'Valin', 'Verin', 'Waldyn', 'Werrin', 'Wyllam'],
   // Surnames [1]
-    ['Armorsmith', 'Arroway', 'Bluebrand', 'Carver', 'Cloudreaver', 'Droverson', 'Falconer', 'Fletcher', 'Hawkeye', 'Houndfriend', 'Milner', 'Kingsbane', 'Proudsteel', 'Swiftstring', 'Swordhand', 'Tanner', 'Thunderblade', 'Truesinger']
+    ['Armorsmith', 'Arroway', 'Bluebrand', 'Bower', 'Carver', 'Cloudreaver', 'Droverson', 'Falconer', 'Farmer', 'Fletcher', 'Hawkeye', 'Houndfriend', 'Milner', 'Kingsbane', 'Lightheart', 'Oathkeeper', 'Proudsteel', 'Shieldbearer', 'Shipsail', 'Shorewall',
+      'Silvercrest', 'Stablehand', 'Swiftstride', 'Swiftstring', 'Swordhand', 'Swordheart', 'Swordsmith', 'Tanner', 'Thunderblade', 'Truesinger', 'Waverider']
   ]
 ];
 
