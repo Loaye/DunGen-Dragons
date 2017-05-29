@@ -21,6 +21,7 @@
       <fieldset id="char-background">
         <lable for="race">Race</lable>
         <select name="race">
+          <option>Select</option>
           <option value="Human">Human</option>
           <option value="Halfling">Halfling</option>
           <option value="Dwarf">Dwarf</option>
@@ -30,6 +31,7 @@
 
         <lable for="class">Class</lable>
         <select name="class">
+          <option>Select</option>
           <option value="Rouge">Rouge</option>
           <option value="Bard">Bard</option>
           <option value="Mage">Mage</option>
@@ -40,6 +42,7 @@
 
         <lable ="alignment">Alignment</lable>
         <select name="race">
+          <option>Select</option>
           <option value="Lawful Good">Lawful Good</option>
           <option value="Lawful Neutral">Lawful Neutral</option>
           <option value="Lawful Evil">Lawful Evil</option>
@@ -55,44 +58,88 @@
         <input type="number" name="experiance" readonly>
       </fieldset>
 
-      <fieldset id="stats">
+      <section id="stats">
         <figure>
-          <label for="strength">Strength</lable>
-          <input type="number" name="strength" readonly>
+          <h3 id="strength">Strength</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
         <figure>
-          <label for="dexterity">Dexterity</lable>
-          <input type="number" name="dexterity" readonly>
+          <h3 id="dexterity">Dexterity</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
         <figure>
-          <label for="Constitution">Constitution</lable>
-          <input type="number" name="Constitution" readonly>
+          <h3 id="Constitution">Constitution</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
         <figure>
-          <label for="intelligence">Intelligence</lable>
-          <input type="number" name="intelligence" readonly>
+          <h3 id="intelligence">Intelligence</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
         <figure>
-          <label for="wisdom">Wisdom</lable>
-          <input type="number" name="wisdom" readonly>
+          <h3 id="wisdom">Wisdom</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
         <figure>
-          <label for="charisma">Charisma</lable>
-          <input type="number" name="charisma" readonly>
+          <h3 id="charisma">Charisma</h3>
+          <p>
+            <!-- stats go here-->
+          </p>
         </figure>
-      </fieldset>
+      </section>
 
-      <section id="abilities" class="clearfix">
-        <h3>Abilities</h3>
+      <section id="inventory">
+        <h3>Inventroy</h3>
+      </section>
+
+      <div id="health-box">
+        <section id="physical-stats">
+          <h3>Age</h3>
+          <h3>Height</h3>
+          <h3>Weight</h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
+
+        <section id="health">
+          <h3>HP</h3>
+          <h3>AC</h3>
+          <h3>Gold</h3>
+          <p id="hp">
+            <!-- stats go here-->
+          </p>
+          <p id="ac">
+            <!-- stats go here-->
+          </p>
+          <p id="gold">
+            <!-- stats go here-->
+          </p>
+
+        </section>
+      </div>
+
+      <section id="traits">
+        <h3>Traits</h3>
         <p>
         <!-- charcter abilities go here-->
         </p>
       </section>
 
-      <section id="background">
-        <lable for="background">Background</lable>
-        <textarea id="story"></textarea>
+      <section id="backstory">
+        <h3>Backstory</h3>
+        <textarea></textarea>
       </section>
+      <div class="clearfix"></div>
     </main>
   </body>
 </html>
