@@ -10,79 +10,89 @@
       <!-- Give me head -->
     </head>
     <main>
-      <form>
-        <fieldset id="char-meta">
-          <label for="char-name">Character Name</label>
-          <input type="text" name="char-name" placeholder="Enter Character Name" required>
+      <fieldset id="char-meta">
+        <label for="char-name">Character Name</label>
+        <input type="text" name="char-name" placeholder="Enter Character Name" required>
 
-          <label for="char-level">Lvl</lable>
-          <input type="number" name="char-level" readonly>
-        </fieldset>
+        <label for="char-level">Lvl</lable>
+        <input type="number" name="char-level" readonly>
+      </fieldset>
 
-        <fieldset id="char-background">
-          <lable for="race">Race</lable>
-          <select name="race">
-            <option value="Human">Human</option>
-            <option value="Halfling">Halfling</option>
-            <option value="Dwarf">Dwarf</option>
-            <option value="Elf">Elf</option>
-            <option value="Dragonborn">Dragonborn</option>
-          </select>
+      <fieldset id="char-background">
+        <lable for="race">Race</lable>
+        <select name="race">
+          <option value="Human">Human</option>
+          <option value="Halfling">Halfling</option>
+          <option value="Dwarf">Dwarf</option>
+          <option value="Elf">Elf</option>
+          <option value="Dragonborn">Dragonborn</option>
+        </select>
 
-          <lable for="class">Class</lable>
-          <select name="class">
-            <option value="Rouge">Rouge</option>
-            <option value="Bard">Bard</option>
-            <option value="Mage">Mage</option>
-            <option value="Cleric">Cleric</option>
-            <option value="Warrior">Warrior</option>
-            <option value="Ranger">Ranger</option>
-          </select>
+        <lable for="class">Class</lable>
+        <select name="class">
+          <option value="Rouge">Rouge</option>
+          <option value="Bard">Bard</option>
+          <option value="Mage">Mage</option>
+          <option value="Cleric">Cleric</option>
+          <option value="Warrior">Warrior</option>
+          <option value="Ranger">Ranger</option>
+        </select>
 
-          <lable ="alignment">Alignment</lable>
-          <select name="race">
-            <option value="Lawful Good">Lawful Good</option>
-            <option value="Lawful Neutral">Lawful Neutral</option>
-            <option value="Lawful Evil">Lawful Evil</option>
-            <option value="Neutral Good">Neutral Good</option>
-            <option value="True Neutral">True Neutral</option>
-            <option value="Neutral Evil">Neutral Evil</option>
-            <option value="Chaotic Good">Chaotic Good</option>
-            <option value="Chaotic Neutral">Chaotic Neutral</option>
-            <option value="Chaotic Evil">Chaotic Evil</option>
-          </select>
+        <lable ="alignment">Alignment</lable>
+        <select name="race">
+          <option value="Lawful Good">Lawful Good</option>
+          <option value="Lawful Neutral">Lawful Neutral</option>
+          <option value="Lawful Evil">Lawful Evil</option>
+          <option value="Neutral Good">Neutral Good</option>
+          <option value="True Neutral">True Neutral</option>
+          <option value="Neutral Evil">Neutral Evil</option>
+          <option value="Chaotic Good">Chaotic Good</option>
+          <option value="Chaotic Neutral">Chaotic Neutral</option>
+          <option value="Chaotic Evil">Chaotic Evil</option>
+        </select>
 
-          <lable for="experiance">Exp</lable>
-          <input type="number" name="experiance" readonly>
-        </fieldset>
+        <lable for="experiance">Exp</lable>
+        <input type="number" name="experiance" readonly>
+      </fieldset>
 
-        <fieldset id="stats">
-          <figure>
-            <label for="strength">Strength</lable>
-            <input type="number" name="strength" readonly>
-          </figure>
-          <figure>
-            <label for="dexterity">Dexterity</lable>
-            <input type="number" name="dexterity" readonly>
-          </figure>
-          <figure>
-            <label for="Constitution">Constitution</lable>
-            <input type="number" name="Constitution" readonly>
-          </figure>
-          <figure>
-            <label for="intelligence">Intelligence</lable>
-            <input type="number" name="intelligence" readonly>
-          </figure>
-          <figure>
-            <label for="wisdom">Wisdom</lable>
-            <input type="number" name="wisdom" readonly>
-          </figure>
-          <figure>
-            <label for="charisma">Charisma</lable>
-            <input type="number" name="charisma" readonly>
-          </figure>
-        </fieldset>
-      </form>
+      <fieldset id="stats">
+        <figure>
+          <label for="strength">Strength</lable>
+          <input type="number" name="strength" readonly>
+        </figure>
+        <figure>
+          <label for="dexterity">Dexterity</lable>
+          <input type="number" name="dexterity" readonly>
+        </figure>
+        <figure>
+          <label for="Constitution">Constitution</lable>
+          <input type="number" name="Constitution" readonly>
+        </figure>
+        <figure>
+          <label for="intelligence">Intelligence</lable>
+          <input type="number" name="intelligence" readonly>
+        </figure>
+        <figure>
+          <label for="wisdom">Wisdom</lable>
+          <input type="number" name="wisdom" readonly>
+        </figure>
+        <figure>
+          <label for="charisma">Charisma</lable>
+          <input type="number" name="charisma" readonly>
+        </figure>
+      </fieldset>
+
+      <section id="abilities" class="clearfix">
+        <h3>Abilities</h3>
+        <p>
+        <!-- charcter abilities go here-->
+        </p>
+      </section>
+
+      <section id="background">
+        <lable for="background">Background</lable>
+        <textarea id="story"></textarea>
+      </section>
     </main>
   </body>
 </html>
