@@ -1,0 +1,176 @@
+/**{
+  outline:1px dotted;
+}*/
+
+.clearfix{
+  clear:both;
+}
+
+body{
+  background:black;
+}
+
+main{
+  width:960px;
+  height:600px;
+  margin:0 auto;
+  background:white;
+  padding:50px 3px;
+}
+
+#char-meta{
+  display:inline-block;
+}
+
+#char-meta input:last-child{
+  width:50px;
+}
+
+#char-background{
+  float:right;
+  width:540px;
+}
+
+#char-background lable{
+  margin-left:6px;
+}
+
+#char-background input{
+  width:50px;
+}
+
+#stats{
+  display:inline-block;
+  float:left;
+  width:109px;
+  margin-top:10px;
+}
+
+#stats figure{
+  float:left;
+  width:80px;
+  height:75px;
+  border:1px solid gray;
+  text-align:center;
+  margin:5px 0;
+}
+
+#stats p{
+  margin:15px auto;
+  font:25px helvetica;
+}
+
+#health-box{
+  display: inline-block;
+  float: left;
+  width: 190px;
+  height: 250px;
+  margin-top:15px;
+  margin-right:15px;
+}
+
+#physical-stats{
+  display:inline-block;
+  width:190px;
+  height:115px;
+  border:1px solid gray;
+  margin-right:10px;
+}
+
+#physical-stats h3, #physical-stats span{
+  display:inline-block;
+  float:left;
+  text-align:center;
+  border-bottom:1px solid grey;
+  border-right:1px solid grey;
+  width: 50px;
+  padding:10px 6.34px 0 6.34px;
+}
+
+#physical-stats h3:last-of-type, #physical-stats span:last-of-type{
+  border-right:none;
+}
+
+#physical-stats span{
+  height:58px;
+  border-bottom:none;
+  font:20px helvetica;
+  padding-top: 30px;
+}
+
+#health{
+  display:inline-block;
+  width:190px;
+  height:115px;
+  border:1px solid gray;
+  margin-top:15px;
+}
+
+#health h3, #health p{
+  display:inline-block;
+  float:left;
+  text-align:center;
+  border-bottom:1px solid grey;
+  border-right:1px solid grey;
+  width: 50px;
+  padding:10px 6.34px 0 6.34px;
+}
+
+#health h3:last-of-type, #health p:last-of-type{
+  border-right:none;
+}
+
+#health p{
+  height:58px;
+  border-bottom:none;
+  font:20px helvetica;
+  padding-top: 30px;
+}
+
+#traits{
+  display:inline-block;
+  width:388px;
+  height:230px;
+  margin-top:15px;
+  border:1px solid grey;
+  padding:10px;
+}
+
+#traits p{
+  width:100%;
+  height:90%;
+  margin-top:10px;
+}
+
+#backstory{
+  display:inline-block;
+  margin-top:15px;
+  border:1px solid grey;
+  width:614px;
+}
+
+#backstory h3{
+  padding:10px;
+}
+
+#backstory textarea{
+  width:100%;
+  height:205px;
+  padding:0;
+  resize: none;
+  font:15px helvetica;
+  border:none;
+}
+
+#inventory{
+  display:inline-block;
+  float:right;
+  border:1px solid gray;
+  width:205px;
+  height:510px;
+  margin-top:15px;
+}
+
+#inventory h3{
+  padding:10px;
+}
