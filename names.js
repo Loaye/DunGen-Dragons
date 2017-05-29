@@ -1,3 +1,8 @@
+function Player(){
+  this.name = '';
+  this.race = '';
+}
+
 var names = [
   [ // Dragonborn [0]
   // First names [0]
@@ -36,3 +41,41 @@ var names = [
     ['Armorsmith', 'Arroway', 'Bluebrand', 'Carver', 'Cloudreaver', 'Droverson', 'Falconer', 'Fletcher', 'Hawkeye', 'Houndfriend', 'Milner', 'Kingsbane', 'Proudsteel', 'Swiftstring', 'Swordhand', 'Tanner', 'Thunderblade', 'Truesinger']
   ]
 ];
+
+function randNum(max){
+  return Math.floor(Math.random() * (max - 0 + 1)) + 0;
+}
+
+Player.prototype.getName = function(){
+  var firstName = '';
+  var lastName = '';
+
+  switch(this.race){
+  case 'dragonborn':
+    firstName = names[0][0][randNum(names[0][0].length)];
+    lastName = names[0][1][randNum(names[0][1].length)];
+    break;
+  case 'dwarf':
+    firstName = names[1][0][randNum(names[1][0].length)];
+    lastName = names[1][1][randNum(names[1][1].length)];
+    break;
+  case 'elf':
+    firstName = names[2][0][randNum(names[2][0].length)];
+    lastName = names[2][1][randNum(names[2][1].length)];
+    break;
+  case 'half-orc':
+    firstName = names[3][0][randNum(names[3][0].length)];
+    lastName = names[3][1][randNum(names[3][1].length)];
+    break;
+  case 'halfling':
+    firstName = names[4][0][randNum(names[4][0].length)];
+    lastName = names[4][1][randNum(names[4][1].length)];
+    break;
+  case 'human':
+    firstName = names[5][0][randNum(names[5][0].length)];
+    lastName = names[5][1][randNum(names[5][1].length)];
+    break;
+  }
+  this.name = firstName + ' ' + lastName;
+  console.log('You are ' + this.name + ' the ' + this.race + '.');
+};
