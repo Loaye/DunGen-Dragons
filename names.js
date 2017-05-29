@@ -16,8 +16,8 @@ var names = [
     ['Algis', 'Alma', 'Balder', 'Beor', 'Breora', 'Broden', 'Davak', 'Dunik', 'Dur', 'Dwalo', 'Elmar', 'Furos', 'Golben', 'Halden', 'Harrow', 'Hilder', 'Hothor', 'Ingleth', 'Kravar', 'Ludo',
       'Marda', 'Norik', 'Olaver', 'Orik', 'Rorin', 'Stilda', 'Taril', 'Therstine', 'Thoster', 'Vargo', 'Walga', 'Wellam', 'Wulf', 'Yanice'],
   // Surnames [1]
-    ['Alebelly', 'Battlebeard', 'Beerbreath', 'Cleftbelly', 'Deepdweller', 'Destinaxe', 'Diamondtooth', 'Dirteater', 'Dirtfoot', 'Dugdeep', 'Firebeard', 'Forgemaster', 'Gemseeker', 'Giantsbane', 'Goldforge', 'Goldglory', 'Greybeard', 'Hammerfall', 'Hammerfist', 'Mineshadow', 'Mountainfoot',
-      'Mudbeard', 'Mudmouth', 'Oreseer', 'Redbeard', 'Rubymace', 'Sharpsteel', 'Snowbeard', 'Stoneheart', 'Stonekin', 'Stonewalker', 'Stoutshield', 'Warheart', 'Wrymsbane']
+    ['Alebelly', 'Battlebeard', 'Beerbreath', 'Cleftbelly', 'Deepdweller', 'Destinaxe', 'Diamondtooth', 'Dirteater', 'Dirtfoot', 'Dugdeep', 'Firebeard', 'Forgemaster', 'Gemseeker', 'Giantsbane', 'Goldforge', 'Goldglory', 'Greybeard', 'Hammerfall', 'Hammerfist', 'Mineshadow',
+      'Mountainfoot', 'Mountainson', 'Mudbeard', 'Mudmouth', 'Oreseer', 'Redbeard', 'Rubymace', 'Sharpsteel', 'Snowbeard', 'Stoneheart', 'Stonekin', 'Stoneson', 'Stonewalker', 'Stoutshield', 'Warheart', 'Wrymsbane']
   ],
   [ // Elf [2]
   // First names [0]
