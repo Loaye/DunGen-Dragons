@@ -3,19 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>DunGens & Dragons | Home</title>
+    <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <div>
         <div class="header menu">
-          <img src="menu.png" alt="">
+          <img src="../img/menu.png" alt="">
         </div>
         <h1>DunGens & Dragons</h1>
         <div class="header border">
         </div>
         <ul>
-          <li class="header list"><img src="gear.png" alt=""></li>
+          <li class="header list">
+            <img src="../img/gear.png" alt="">
+            <form class="login">
+              <input type="text" name="user" placeholder="Enter User Name" required>
+              <input type="text" name="password" placeholder="Ente Password" required="password">
+              <button type="submit" name="button">Log In</button>
+            </form>
+          </li>
           <li class="header list"></li>
           <li class="header list"></li>
         </ul>
@@ -47,7 +55,7 @@
           </div>
         </div>
 
-        <img class="divider" src="border.png">
+        <img class="divider" src="../img/border.png">
 
         <div class="main option">
           <div id="pro">
@@ -56,14 +64,14 @@
             </div>
           </div>
         </div>
-        <a href="#"><button type="button" name="button">Instant Play!</button></a>
+        <a href="#"><button type="button" name="instant">Instant Play!</button></a>
       </section>
 
     </main>
     <footer>
 
     </footer>
-    <script src="app.js">
+    <script src="../app.js">
 
     </script>
   </body>

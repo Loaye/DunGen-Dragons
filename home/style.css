@@ -1,0 +1,96 @@
+.main.master {
+  width: 960px;
+  height: 800px;
+  margin: auto;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+.main>h2 {
+  color: white;
+  height: 30px;
+  width: 800px;
+  float: left;
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.main.option {
+  width: 400px;
+  height: 400px;
+  background: white;
+  float:left;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+.main.option> * {
+  width: 400px;
+  height: 400px;
+}
+
+
+#noob {
+  background: url("../img/kanye.png");
+  background-size: contain;
+}
+
+#pro {
+  background: url("../img/HalfOrc_paladin.jpg");
+  background-size: cover;
+}
+
+#noob> div, #pro> div {
+  height: 400px;
+  width: 400px;
+  background: rgba(1, 1, 1, 0.5);
+  cursor: pointer;
+  transition: .35s all;
+}
+
+#noob>div>h3, #pro>div>h3 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 400px;
+  color: white;
+  background: rgba(1, 1, 1, 0.75);
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 165px;
+  font-size: 30px;
+  font-family: fantasy;
+  transition: .35s all;
+}
+
+#noob> div:hover, #pro> div:hover {
+  background: none;
+}
+
+.main>:nth-child(2) {
+}
+
+.divider {
+  height: 500px;
+  width: 90px;
+  float: left;
+  margin-left: 15px;
+  border-radius: 20px;
+}
+
+button[name="instant"] {
+  float: left;
+  margin-left: 230px;
+  margin-top: 30px;
+  color: white;
+  background: radial-gradient(white, #222222);
+  width: 500px;
+  height: 100px;
+  border:  5px solid white;
+  border-radius: 50px;
+  color: black;
+  font-size: 40px;
+  font-family: fantasy;
+}
