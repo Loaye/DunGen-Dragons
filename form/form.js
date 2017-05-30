@@ -1,12 +1,14 @@
 'use strict';
 var charClass;
 var charRace;
+var charLanguages;
 var finalStats = [];
 
 function unPack() {
   if(sessionStorage.charRace != undefined && sessionStorage.charClass != undefined) {
     charClass = JSON.parse(sessionStorage.charClass);
     charRace = JSON.parse(sessionStorage.charRace);
+    charLanguages = JSON.parse(sessionStorage.charLanguages);
     restrictValues();
   }
 }
@@ -35,4 +37,15 @@ function insertStats() {
   }
 }
 
+function insertLanguages(){
+  var langTags = document.getElementsByClassName('char-languages');
+  var list = document.createElement('ul');
+  for (var i = 0; i < charLanguages.length; i++){
+    list.innerHTML = '<li>' + charLanguages[i] + '</li>';
+    console.log(list);
+  }
+  langTags.appendChild = list;
+}
+
 insertStats();
+insertLanguages();

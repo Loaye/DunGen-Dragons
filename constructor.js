@@ -8,21 +8,23 @@ function CharClass(className, stats, description) {
   allClasses.push(this);
 }
 
-function Race(race, stats, description, abilities) {
+function Race(race, stats, description, traits) {
   this.race = race;
   this.stats = stats;
   this.description = description;
-  this.abilities = abilities;
+  this.traits = traits;
   allRaces.push(this);
 }
 //Array order for stats: Charima, Constitution, Dexterity, Intelligence, Strength, Wisdom
-var dragonborn = new Race('Dragonborn', [1, 0, 0, 0, 2, 0], 'I don\'t know', []);
-var elf = new Race('Elf', [0, 2, 0, 0, 0, 1], 'I don\'t know', []);
-var dwarf = new Race('Dwarf', [0, 0, 2, 0, 0, 1], 'I don\'t know', []);
-var halfling = new Race('Halfling', [1, 0, 2, 0, 0, 0], 'I don\'t know', []);
-var halfOrc = new Race('Half Orc', [0, 1, 0, 0, 2, 0], 'I don\'t know', []);
-var human = new Race('Human', [1, 1, 1, 1, 1, 1], 'I don\'t know', []);
+//Race of Player
+var dragonborn = new Race('Dragonborn', [1, 0, 0, 0, 2, 0], 'I don\'t know', ['Draconic Ancestry Black Acid', 'Draconic Ancestry Blue Lightning', 'Draconic Ancestry Brass Fire', 'Draconic Ancestry Bronze Lightning', 'Draconic Ancestry Copper Acid', 'Draconic Ancestry Gold Fire', 'Draconic Ancestry Green Poison', 'Draconic Ancestry Red Fire', 'Draconic Ancestry Silver Cold', 'Draconic Ancestry White Cold', 'Breath Weapon', 'Damage Resistance']);
+var elf = new Race('Elf', [0, 2, 0, 0, 0, 1], 'I don\'t know', ['Darkvision', 'Keen Senses', 'Fey Ancestry', 'Trance']);
+var dwarf = new Race('Dwarf', [0, 0, 2, 0, 0, 1], 'I don\'t know', ['Darkvision', 'Dwarven Resilience', 'Dwarven Combat Training', 'Dwarven Toughness', 'Tool Profiency', 'Stonecunning']);
+var halfling = new Race('Halfling', [1, 0, 2, 0, 0, 0], 'I don\'t know', ['Lucky', 'Brave', 'Halfling Nimbleness', 'Lightfoot']);
+var halfOrc = new Race('Half Orc', [0, 1, 0, 0, 2, 0], 'I don\'t know', ['Darkvision', 'Menacing', 'Relentless Endurance', 'Savage Attacks']);
+var human = new Race('Human', [1, 1, 1, 1, 1, 1], 'I don\'t know', ['None']);
 
+//Class of Player
 var warrior = new CharClass('Warrior', [0, 1, 0, 0, 2, 0], 'some stuff');
 var cleric = new CharClass('Cleric', [1, 0, 0, 0, 0, 2], 'some stuff');
 var ranger = new CharClass('Ranger', [0, 0, 2, 0, 1, 0], 'some stuff');
@@ -37,4 +39,5 @@ function Player(name, playerClass, playerRace, stats, story) {
   this.playerRace = playerRace;
   this.stats = stats;
   this.story = story;
+  this.language = ['Common',];
 }
