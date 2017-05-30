@@ -7,9 +7,9 @@
 }
 
 body{
-  background: url('img/moon.jpg');
+  background:black url('../img/moon.jpg');
+  background-attachment: fixed;
 }
-
 
 h1{
   font:30px fantasy;
