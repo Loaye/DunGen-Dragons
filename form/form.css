@@ -3,90 +3,90 @@
 }*/
 
 .clearfix{
-  clear:both;
+  clear: both;
 }
 
 body{
-  background:black url('../img/moon.jpg');
+  background: black url('../img/moon.jpg');
   background-attachment: fixed;
 }
 
 h1{
-  font:30px fantasy;
+  font: 32px fantasy;
 }
 
 main{
-  width:960px;
-  height:100%;
-  margin:20px auto;
-  background:white;
-  padding:50px 3px;
+  width: 960px;
+  height: 100%;
+  margin: 20px auto;
+  background: white;
+  padding: 50px 3px;
 }
 
 h2{
-  font:30px fantasy;
-  padding-bottom:10px;
+  font: 30px fantasy;
+  padding-bottom: 10px;
 }
 
 #char-meta{
-  display:inline-block;
+  display: inline-block;
 }
 
 #char-meta input:last-child{
-  width:50px;
+  width: 50px;
 }
 
 #char-background{
-  float:right;
-  width:550px;
-  height:20px;
+  float: right;
+  width: 550px;
+  height: 20px;
 }
 
-#char-background lable{
-  margin-left:6px;
-  margin-top:-4px;
+#char-background label{
+  margin-left: 6px;
+  margin-top: -4px;
 }
 
 #char-background p{
-  display:inline-block;
-  width:50px;
-  height:14px;
-  border-bottom:1px solid gray;
+  display: inline-block;
+  width: 50px;
+  height: 14px;
+  border-bottom: 1px solid gray;
 }
 
 #damn-it{
-  display:inline-block;
-  width:960px;
-  height:510px;
-  margin-bottom:15px;
+  display: inline-block;
+  width: 960px;
+  height: 510px;
+  margin-bottom: 15px;
 }
 
 #stats{
-  display:inline-block;
-  float:left;
-  width:109px;
-  margin-top:10px;
+  display: inline-block;
+  float: left;
+  width: 109px;
+  margin-top: 10px;
 }
 
 #stats figure{
-  float:left;
-  width:80px;
-  height:75px;
-  border:1px solid gray;
-  text-align:center;
-  margin:5px 0;
+  float: left;
+  width: 80px;
+  height: 75px;
+  border: 1px solid gray;
+  text-align: center;
+  margin: 5px 0;
 }
 
 #stats p{
-  margin:15px auto;
-  font:25px helvetica;
+  margin: 15px auto;
+  font: 25px helvetica;
 }
 
 #middle-container{
-  display:inline-block;
-  float:left;
-  width:620px;
-  height:530px;
+  display: inline-block;
+  float: left;
+  width: 620px;
+  height: 530px;
 }
 
 #health-box{
@@ -99,27 +99,27 @@ h2{
 }
 
 #physical-stats{
-  display:inline-block;
-  width:190px;
-  height:115px;
-  border:1px solid gray;
-  margin-right:10px;
+  display: inline-block;
+  width: 190px;
+  height: 115px;
+  border: 1px solid gray;
+  margin-right: 10px;
 }
 
 #health{
-  display:inline-block;
-  width:190px;
-  height:115px;
-  border:1px solid gray;
-  margin-top:15px;
+  display: inline-block;
+  width: 190px;
+  height: 115px;
+  border: 1px solid gray;
+  margin-top: 15px;
 }
 
 #physical-stats h3, #physical-stats span, #health h3, #health p{
-  display:inline-block;
-  text-align:center;
-  border-right:1px solid gray;
+  display: inline-block;
+  text-align: center;
+  border-right: 1px solid gray;
   width: 50px;
-  padding:10px 4.5px 0 4.5px;
+  padding: 10px 4.5px 0 4.5px;
 }
 
 #physical-stats h3:last-of-type, #physical-stats span:last-of-type, #health h3:last-of-type, #health p:last-of-type{
@@ -128,83 +128,83 @@ h2{
 
 
 #physical-stats span, #health p{
-  height:60px;
-  font:20px helvetica;
-  padding-top:30px;
+  height: 60px;
+  font: 20px helvetica;
+  padding-top: 30px;
 }
 
 #traits{
-  display:inline-block;
-  float:left;
-  width:387px;
-  height:230px;
-  margin-top:15px;
-  border:1px solid grey;
-  padding:10px;
+  display: inline-block;
+  float: left;
+  width: 387px;
+  height: 230px;
+  margin-top: 15px;
+  border: 1px solid grey;
+  padding: 10px;
 }
 
 #traits p{
-  width:100%;
-  height:90%;
-  margin-top:10px;
+  width: 100%;
+  height: 90%;
+  margin-top: 10px;
 }
 
 #backstory{
-  display:inline-block;
-  float:left;
-  margin-top:15px;
-  border:1px solid grey;
-  width:614px;
+  display: inline-block;
+  float: left;
+  margin-top: 15px;
+  border: 1px solid grey;
+  width: 614px;
 }
 
 #backstory h3{
-  padding:10px;
+  padding: 10px;
 }
 
 #backstory textarea{
-  width:614px;
-  height:205px;
-  padding:0;
+  width: 614px;
+  height: 205px;
+  padding: 0;
   resize: none;
-  font:15px helvetica;
-  border:none;
+  font: 15px helvetica;
+  border: none;
 }
 
 #inventory{
-  display:inline-block;
-  float:right;
-  border:1px solid gray;
-  width:205px;
-  height:510px;
-  margin-top:15px;
+  display: inline-block;
+  float: right;
+  border: 1px solid gray;
+  width: 205px;
+  height: 510px;
+  margin-top: 15px;
 
 }
 
 #inventory h3{
-  padding:10px;
+  padding: 10px;
 }
 
 #bottom-container{
-  display:inline-block;
-  float:left;
-  height:200px;
-  width:961px;
+  display: inline-block;
+  float: left;
+  height: 200px;
+  width: 961px;
 }
 
 #languages, #attacks{
-  display:inline-block;
-  float:left;
-  margin-top:10px;
-  border:1px solid grey;
-  width:400px;
-  height:200px;
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+  border: 1px solid grey;
+  width: 400px;
+  height: 200px;
 }
 
 #languages h3, #attacks h3{
-  padding:10px;
+  padding: 10px;
 }
 
 #attacks{
   margin-left: 13px;
-  width:542px;
+  width: 542px;
 }
