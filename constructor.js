@@ -31,9 +31,10 @@ var bard = new CharClass('Bard', [1, 8, 2, 0, 0, 0], 'some stuff');
 var mage = new CharClass('Mage', [0, 6, 1, 2, 0, 0], 'some stuff');
 
 
-function Player(name, playerClass, playerRace, stats) {
+function Player(name, playerClass, playerRace, stats, story) {
   this.name = name;
   this.playerClass = playerClass;
   this.playerRace = playerRace;
   this.stats = stats;
+  this.story = story;
 }
