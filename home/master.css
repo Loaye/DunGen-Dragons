@@ -154,7 +154,7 @@ header>div>ul>li>img {
 
 main {
   margin-top: 50px;
-  background: url('img/moon.jpg');
+  background: url('../img/moon.jpg');
   background-size: cover;
 }
 
