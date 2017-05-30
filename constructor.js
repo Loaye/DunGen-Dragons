@@ -23,12 +23,12 @@ var halfling = new Race('Halfling', [1, 0, 2, 0, 0, 0], 'I don\'t know', []);
 var halfOrc = new Race('Half Orc', [0, 1, 0, 0, 2, 0], 'I don\'t know', []);
 var human = new Race('Human', [1, 1, 1, 1, 1, 1], 'I don\'t know', []);
 
-var warrior = new CharClass('Warrior', [0, 11, 0, 0, 2, 0], 'some stuff');
-var cleric = new CharClass('Cleric', [1, 8, 0, 0, 0, 2], 'some stuff');
-var ranger = new CharClass('Ranger', [0, 10, 2, 0, 1, 0], 'some stuff');
-var rogue = new CharClass('Rogue', [0, 9, 2, 0, 0, 0], 'some stuff');
-var bard = new CharClass('Bard', [1, 8, 2, 0, 0, 0], 'some stuff');
-var mage = new CharClass('Mage', [0, 6, 1, 2, 0, 0], 'some stuff');
+var warrior = new CharClass('Warrior', [0, 1, 0, 0, 2, 0], 'some stuff');
+var cleric = new CharClass('Cleric', [1, 0, 0, 0, 0, 2], 'some stuff');
+var ranger = new CharClass('Ranger', [0, 0, 2, 0, 1, 0], 'some stuff');
+var rogue = new CharClass('Rogue', [0, 1, 2, 0, 0, 0], 'some stuff');
+var bard = new CharClass('Bard', [1, 0, 2, 0, 0, 0], 'some stuff');
+var mage = new CharClass('Mage', [0, 0, 1, 2, 0, 0], 'some stuff');
 
 
 function Player(name, playerClass, playerRace, stats, story) {

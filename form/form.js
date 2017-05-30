@@ -22,7 +22,7 @@ function restrictValues() {
 
 function randomStats() {
   for (var i = 0; i < 6; i++) {
-    var randNum = Math.floor(Math.random() * 18 + 1);
+    var randNum = Math.floor(Math.random() * 18 + 3);
     finalStats.push(randNum + charClass.stats[i] + race.stats[i]);
   }
 }
