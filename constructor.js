@@ -16,7 +16,7 @@ function Race(race, stats, description, abilities) {
   allRaces.push(this);
 }
 //Array order for stats: Charima, Constitution, Dexterity, Intelligence, Strength, Wisdom
-var dragonborn = new Race('DragonBorn', [1, 0, 0, 0, 2, 0], 'I don\'t know', []);
+var dragonborn = new Race('Dragonborn', [1, 0, 0, 0, 2, 0], 'I don\'t know', []);
 var elf = new Race('Elf', [0, 2, 0, 0, 0, 1], 'I don\'t know', []);
 var dwarf = new Race('Dwarf', [0, 0, 2, 0, 0, 1], 'I don\'t know', []);
 var halfling = new Race('Halfling', [1, 0, 2, 0, 0, 0], 'I don\'t know', []);

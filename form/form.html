@@ -1,23 +1,24 @@
+
 <!DOCTYPE html>
   <html>
   <head>
     <title>Your Character</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="../home/master.css">
+    <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="form.css">
   </head>
   <body>
     <header>
       <div>
         <div class="header menu">
-          <img src="../img/menu.png" alt="">
+          <img src="img/menu.png" alt="">
         </div>
         <h1>DunGens & Dragons</h1>
         <div class="header border">
         </div>
         <ul>
           <li class="header list">
-            <img src="../img/gear.png" alt="">
+            <img src="img/gear.png" alt="">
             <form class="login">
               <input type="text" name="user" placeholder="Enter User Name" required>
               <input type="text" name="password" placeholder="Enter Password" required="password">
@@ -65,12 +66,13 @@
             <option value="Dwarf">Dwarf</option>
             <option value="Elf">Elf</option>
             <option value="Dragonborn">Dragonborn</option>
+            <option value="Half Orc">Half Orc</option>
           </select>
 
           <lable for="class">Class</lable>
           <select name="class">
             <option>Select</option>
-            <option value="Rouge">Rouge</option>
+            <option value="Rogue">Rouge</option>
             <option value="Bard">Bard</option>
             <option value="Mage">Mage</option>
             <option value="Cleric">Cleric</option>
@@ -95,41 +97,42 @@
           <lable for="experiance">Exp</lable>
           <p></p>
         </fieldset>
+
         <div id="damn-it">
           <section id="stats">
             <figure>
               <h3 id="strength">Strength</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
             <figure>
               <h3 id="dexterity">Dexterity</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
             <figure>
               <h3 id="Constitution">Constitution</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
             <figure>
               <h3 id="intelligence">Intelligence</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
             <figure>
               <h3 id="wisdom">Wisdom</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
             <figure>
               <h3 id="charisma">Charisma</h3>
-              <p>
+              <p class="stats">
                 <!-- stats go here-->
               </p>
             </figure>
@@ -198,6 +201,12 @@
       </div>
       <canvas id="stat-chart" width="960" height:"400"></canvas>
     </main>
+<<<<<<< HEAD
     <script src="../form/app.js"></script>
+=======
+    <script src="form.js"></script>
+    <script src="app.js"></script>
+>>>>>>> 1593ee40f99260002c06d2df706299671dbff878
   </body>
+</html>
 </html>
