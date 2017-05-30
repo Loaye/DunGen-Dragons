@@ -7,7 +7,6 @@ var classImages = ['../img/smil.png','../img/smil.png','../img/smil.png','../img
 var chosenRace;
 var chosenClass;
 
-
 function newImages() {
   for (var i= 0; i < classImages.length; i++) {
     var newImage = document.createElement('img');
@@ -26,8 +25,6 @@ function imageSwap() {
   createLastHandler();
 }
 
-
-
 function raceHandler(raceindex) {
   return function () {
     chosenRace = raceindex;
@@ -38,23 +35,27 @@ function raceHandler(raceindex) {
 function classHandler(raceindex) {
   return function () {
     chosenClass = raceindex;
+    packageValues();
+    document.location.href = 'form.html';
   };
+}
+
+function packageValues() {
+  sessionStorage.race = JSON.stringify(chosenRace);
+  sessionStorage.charClass = JSON.stringify(chosenClass);
 }
 
 function createFirstHandler() {
   for (var i = 0; i < imageList.length; i++) {
-    imageList[i].addEventListener('click', raceHandler(allRaces[i]))
+    imageList[i].addEventListener('click', raceHandler(allRaces[i]));
   }
 }
-
 
 function createLastHandler() {
   for (var i = 0; i < imageList.length; i++) {
-    imageList[i].addEventListener('click', classHandler(allClasses[i]))
+    imageList[i].addEventListener('click', classHandler(allClasses[i]));
   }
 }
-
-
 
 
 createFirstHandler();
