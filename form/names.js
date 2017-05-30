@@ -37,7 +37,7 @@ var names = [
   ],
   [ // Halfling [4]
   // First names [0]
-    ['Andrey', 'Bolo', 'Bree', 'Cailynn', 'Darry', 'Davin', 'Derrin', 'Dayra', 'Edda', 'Emela', 'Farwick', 'Gordo', 'Grinley', 'Hollis', 'Holly', 'Jemma', 'Jollo', 'Joren', 'Kad', 'Katrin',
+    ['Dildo Baggins', 'Bolo', 'Bree', 'Cailynn', 'Darry', 'Davin', 'Derrin', 'Dayra', 'Edda', 'Emela', 'Farwick', 'Gordo', 'Grinley', 'Hollis', 'Holly', 'Jemma', 'Jollo', 'Joren', 'Kad', 'Katrin',
       'Laina','Lindy', 'Lira', 'Lodor', 'Lumo', 'Margo', 'Mathel', 'Mirabella', 'Norn', 'Orlo', 'Perrin', 'Pippa', 'Pruella', 'Rando', 'Rosna', 'Rosree', 'Sammel', 'Tilly', 'Tulip', 'Walda',
       'Wellen', 'Wimsy', 'Yara'],
   // Surnames [1]
