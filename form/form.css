@@ -54,6 +54,13 @@ h2{
   border-bottom:1px solid gray;
 }
 
+#damn-it{
+  display:inline-block;
+  width:960px;
+  height:510px;
+  margin-bottom:15px;
+}
+
 #stats{
   display:inline-block;
   float:left;
@@ -123,7 +130,7 @@ h2{
 #physical-stats span, #health p{
   height:60px;
   font:20px helvetica;
-  padding-top: 30px;
+  padding-top:30px;
 }
 
 #traits{
