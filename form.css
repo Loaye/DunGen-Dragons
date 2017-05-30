@@ -7,14 +7,23 @@
 }
 
 body{
-  background:black;
+  background: url('img/moon.jpg');
+}
+
+h1{
+  font:30px fantasy;
 }
 
 main{
   width:960px;
-  margin:0 auto;
+  margin:20px auto;
   background:white;
   padding:50px 3px;
+}
+
+h2{
+  font:30px fantasy;
+  padding-bottom:10px;
 }
 
 #char-meta{

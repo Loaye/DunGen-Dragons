@@ -3,13 +3,50 @@
   <head>
     <title>Your Character</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="form.css">
   </head>
   <body>
-    <head>
-      <!-- Give me head -->
-    </head>
+    <header>
+      <div>
+        <div class="header menu">
+          <img src="img/menu.png" alt="">
+        </div>
+        <h1>DunGens & Dragons</h1>
+        <div class="header border">
+        </div>
+        <ul>
+          <li class="header list">
+            <img src="img/gear.png" alt="">
+            <form class="login">
+              <input type="text" name="user" placeholder="Enter User Name" required>
+              <input type="text" name="password" placeholder="Enter Password" required="password">
+              <button type="submit" name="button">Log In</button>
+            </form>
+          </li>
+          <li class="header list"></li>
+          <li class="header list"></li>
+        </ul>
+      </div>
+    </header>
     <main>
+      <section class="hidden master">
+        <div class="hidden dropdown">
+          <p>Home</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>About Us</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>Contact Us</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>Donate/ Give Money</p>
+        </div>
+      </section>
+
+      <h2>Dungeons and Dragons Character Sheet</h2>
+
       <fieldset id="char-meta">
         <label for="char-name">Character Name</label>
         <input type="text" name="char-name" placeholder="Enter Character Name" required>
@@ -143,5 +180,6 @@
 
       <canvas id="stat-chart" width="960" height:"400"></canvas>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
