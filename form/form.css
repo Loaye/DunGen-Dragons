@@ -10,12 +10,14 @@ body{
   background: url('img/moon.jpg');
 }
 
+
 h1{
   font:30px fantasy;
 }
 
 main{
   width:960px;
+  height:100%;
   margin:20px auto;
   background:white;
   padding:50px 3px;
@@ -36,15 +38,20 @@ h2{
 
 #char-background{
   float:right;
-  width:540px;
+  width:550px;
+  height:20px;
 }
 
 #char-background lable{
   margin-left:6px;
+  margin-top:-4px;
 }
 
-#char-background input{
+#char-background p{
+  display:inline-block;
   width:50px;
+  height:14px;
+  border-bottom:1px solid gray;
 }
 
 #stats{
@@ -68,6 +75,13 @@ h2{
   font:25px helvetica;
 }
 
+#middle-container{
+  display:inline-block;
+  float:left;
+  width:620px;
+  height:530px;
+}
+
 #health-box{
   display: inline-block;
   float: left;
@@ -85,27 +99,6 @@ h2{
   margin-right:10px;
 }
 
-#physical-stats h3, #physical-stats span{
-  display:inline-block;
-  float:left;
-  text-align:center;
-  border-bottom:1px solid grey;
-  border-right:1px solid grey;
-  width: 50px;
-  padding:10px 6.34px 0 6.34px;
-}
-
-#physical-stats h3:last-of-type, #physical-stats span:last-of-type{
-  border-right:none;
-}
-
-#physical-stats span{
-  height:58px;
-  border-bottom:none;
-  font:20px helvetica;
-  padding-top: 30px;
-}
-
 #health{
   display:inline-block;
   width:190px;
@@ -114,30 +107,29 @@ h2{
   margin-top:15px;
 }
 
-#health h3, #health p{
+#physical-stats h3, #physical-stats span, #health h3, #health p{
   display:inline-block;
-  float:left;
   text-align:center;
-  border-bottom:1px solid grey;
-  border-right:1px solid grey;
+  border-right:1px solid gray;
   width: 50px;
-  padding:10px 6.34px 0 6.34px;
+  padding:10px 4.5px 0 4.5px;
 }
 
-#health h3:last-of-type, #health p:last-of-type{
+#physical-stats h3:last-of-type, #physical-stats span:last-of-type, #health h3:last-of-type, #health p:last-of-type{
   border-right:none;
 }
 
-#health p{
-  height:58px;
-  border-bottom:none;
+
+#physical-stats span, #health p{
+  height:60px;
   font:20px helvetica;
   padding-top: 30px;
 }
 
 #traits{
   display:inline-block;
-  width:388px;
+  float:left;
+  width:387px;
   height:230px;
   margin-top:15px;
   border:1px solid grey;
@@ -152,6 +144,7 @@ h2{
 
 #backstory{
   display:inline-block;
+  float:left;
   margin-top:15px;
   border:1px solid grey;
   width:614px;
@@ -162,7 +155,7 @@ h2{
 }
 
 #backstory textarea{
-  width:100%;
+  width:614px;
   height:205px;
   padding:0;
   resize: none;
@@ -177,8 +170,34 @@ h2{
   width:205px;
   height:510px;
   margin-top:15px;
+
 }
 
 #inventory h3{
   padding:10px;
+}
+
+#bottom-container{
+  display:inline-block;
+  float:left;
+  height:200px;
+  width:961px;
+}
+
+#languages, #attacks{
+  display:inline-block;
+  float:left;
+  margin-top:10px;
+  border:1px solid grey;
+  width:400px;
+  height:200px;
+}
+
+#languages h3, #attacks h3{
+  padding:10px;
+}
+
+#attacks{
+  margin-left: 13px;
+  width:542px;
 }
