@@ -12,15 +12,3 @@
     }
 
   builderResults()
-
-
-
-//
-// function builderResults() {
-//     var allRaces = []
-//     var allClasses = []
-//
-//     if (dragonborn) {
-//       alert()
-//     }
-// }
