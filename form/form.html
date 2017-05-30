@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Your Character</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header menu">
+          <img src="img/menu.png" alt="">
+        </div>
+        <h1>DunGens & Dragons</h1>
+        <div class="header border">
+        </div>
+        <ul>
+          <li class="header list">
+            <img src="img/gear.png" alt="">
+            <form class="login">
+              <input type="text" name="user" placeholder="Enter User Name" required>
+              <input type="text" name="password" placeholder="Enter Password" required="password">
+              <button type="submit" name="button">Log In</button>
+            </form>
+          </li>
+          <li class="header list"></li>
+          <li class="header list"></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hidden master">
+        <div class="hidden dropdown">
+          <p>Home</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>About Us</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>Contact Us</p>
+        </div>
+        <div class="hidden dropdown">
+          <p>Donate/ Give Money</p>
+        </div>
+      </section>
+
+      <div id="form-fix">
+        <h2>Dungeons and Dragons Character Sheet</h2>
+
+        <fieldset id="char-meta">
+          <label for="char-name">Character Name</label>
+          <input type="text" name="char-name" placeholder="Enter Character Name" required>
+
+          <label for="char-level">Lvl</lable>
+          <input type="number" name="char-level" readonly>
+        </fieldset>
+
+        <fieldset id="char-background">
+          <lable for="race">Race</lable>
+          <select name="race">
+            <option>Select</option>
+            <option value="Human">Human</option>
+            <option value="Halfling">Halfling</option>
+            <option value="Dwarf">Dwarf</option>
+            <option value="Elf">Elf</option>
+            <option value="Dragonborn">Dragonborn</option>
+          </select>
+
+          <lable for="class">Class</lable>
+          <select name="class">
+            <option>Select</option>
+            <option value="Rouge">Rouge</option>
+            <option value="Bard">Bard</option>
+            <option value="Mage">Mage</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Warrior">Warrior</option>
+            <option value="Ranger">Ranger</option>
+          </select>
+
+          <lable for="alignment">Alignment</lable>
+          <select name="race">
+            <option>Select</option>
+            <option value="Lawful Good">Lawful Good</option>
+            <option value="Lawful Neutral">Lawful Neutral</option>
+            <option value="Lawful Evil">Lawful Evil</option>
+            <option value="Neutral Good">Neutral Good</option>
+            <option value="True Neutral">True Neutral</option>
+            <option value="Neutral Evil">Neutral Evil</option>
+            <option value="Chaotic Good">Chaotic Good</option>
+            <option value="Chaotic Neutral">Chaotic Neutral</option>
+            <option value="Chaotic Evil">Chaotic Evil</option>
+          </select>
+
+          <lable for="experiance">Exp</lable>
+          <p></p>
+        </fieldset>
+
+        <section id="stats">
+          <figure>
+            <h3 id="strength">Strength</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+          <figure>
+            <h3 id="dexterity">Dexterity</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+          <figure>
+            <h3 id="Constitution">Constitution</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+          <figure>
+            <h3 id="intelligence">Intelligence</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+          <figure>
+            <h3 id="wisdom">Wisdom</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+          <figure>
+            <h3 id="charisma">Charisma</h3>
+            <p>
+              <!-- stats go here-->
+            </p>
+          </figure>
+        </section>
+
+
+        <section id="inventory">
+          <h3>Inventroy</h3>
+        </section>
+
+        <section id="middle-container">
+          <div id="health-box">
+            <section id="physical-stats">
+              <h3>Age</h3>
+              <h3>Height</h3>
+              <h3>Weight</h3>
+              <span></span>
+              <span></span>
+              <span></span>
+            </section>
+
+            <section id="health">
+              <h3>HP</h3>
+              <h3>AC</h3>
+              <h3>Gold</h3>
+              <p id="hp">
+                <!-- stats go here-->
+              </p>
+              <p id="ac">
+                <!-- stats go here-->
+              </p>
+              <p id="gold">
+                <!-- stats go here-->
+              </p>
+
+            </section>
+          </div>
+
+          <section id="traits">
+            <h3>Traits</h3>
+            <p>
+            <!-- charcter abilities go here-->
+            </p>
+          </section>
+
+          <section id="backstory">
+            <h3>Backstory</h3>
+            <textarea></textarea>
+          </section>
+        </secction>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <section id="bottom-container">
+        <section id="languages">
+          <h3>Languages</h3>
+          <p>
+            <!-- character languages go here -->
+          </p>
+        </section>
+
+        <section id="attacks">
+          <h3>Attacks and Spells</h3>
+        </section>
+      </section>
+
+
+
+      <canvas id="stat-chart" width="960" height:"400"></canvas>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

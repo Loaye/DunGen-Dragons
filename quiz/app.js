@@ -3,7 +3,7 @@
 var mainSection = document.getElementsByClassName('main master')[0];
 var masterList = mainSection.getElementsByTagName('ul')[0];
 var imageList = masterList.getElementsByTagName('img');
-var classImages = ['../img/smil.png','../img/smil.png','../img/smil.png','../img/smil.png','../img/smil.png','../img/smil.png'];
+var classImages = ['../img/survey/class_warrior.jpg','../img/survey/class_cleric.jpg','../img/survey/class_ranger.jpg','../img/survey/class_rogue.jpg','../img/survey/class_bard.jpg','../img/survey/class_wizard.jpg'];
 var chosenRace;
 var chosenClass;
 
@@ -36,7 +36,11 @@ function classHandler(raceindex) {
   return function () {
     chosenClass = raceindex;
     packageValues();
+<<<<<<< HEAD
     document.location.href = '../form.html';
+=======
+    document.location.href = '../form/form.html';
+>>>>>>> ec032cc5fe1b8d9173f63fe1490d9f6bbaf99ec4
   };
 }
 
