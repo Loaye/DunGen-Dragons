@@ -36,7 +36,7 @@ function classHandler(raceindex) {
   return function () {
     chosenClass = raceindex;
     packageValues();
-    document.location.href = 'form.html';
+    document.location.href = '../form.html';
   };
 }
 
