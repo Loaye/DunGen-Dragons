@@ -42,7 +42,7 @@ function classHandler(raceindex) {
 }
 
 function packageValues() {
-  sessionStorage.race = JSON.stringify(chosenRace);
+  sessionStorage.charRace = JSON.stringify(chosenRace);
   sessionStorage.charClass = JSON.stringify(chosenClass);
 }
 
