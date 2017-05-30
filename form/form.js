@@ -1,12 +1,12 @@
 'use strict';
 var charClass;
-var race;
+var charRace;
 var finalStats = [];
 
 function unPack() {
-  if(sessionStorage.race != undefined && sessionStorage.charClass != undefined) {
+  if(sessionStorage.charRace != undefined && sessionStorage.charClass != undefined) {
     charClass = JSON.parse(sessionStorage.charClass);
-    race = JSON.parse(sessionStorage.race);
+    charRace = JSON.parse(sessionStorage.charRace);
     restrictValues();
   }
 }
@@ -16,14 +16,14 @@ unPack();
 function restrictValues() {
   document.getElementsByName('class')[0].value = charClass.name;
   document.getElementsByName('class')[0].disabled = true;
-  document.getElementsByName('race')[0].value = race.race;
+  document.getElementsByName('race')[0].value = charRace.race;
   document.getElementsByName('race')[0].disabled = true;
 }
 
 function randomStats() {
   for (var i = 0; i < 6; i++) {
     var randNum = Math.floor(Math.random() * 18 + 3);
-    finalStats.push(randNum + charClass.stats[i] + race.stats[i]);
+    finalStats.push(randNum + charClass.stats[i] + charRace.stats[i]);
   }
 }
 
