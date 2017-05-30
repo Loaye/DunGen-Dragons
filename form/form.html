@@ -98,109 +98,107 @@
           <p></p>
         </fieldset>
 
-        <section id="stats">
-          <figure>
-            <h3 id="strength">Strength</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-          <figure>
-            <h3 id="dexterity">Dexterity</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-          <figure>
-            <h3 id="Constitution">Constitution</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-          <figure>
-            <h3 id="intelligence">Intelligence</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-          <figure>
-            <h3 id="wisdom">Wisdom</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-          <figure>
-            <h3 id="charisma">Charisma</h3>
-            <p class="stats">
-              <!-- stats go here-->
-            </p>
-          </figure>
-        </section>
+        <div id="damn-it">
+          <section id="stats">
+            <figure>
+              <h3 id="strength">Strength</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+            <figure>
+              <h3 id="dexterity">Dexterity</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+            <figure>
+              <h3 id="Constitution">Constitution</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+            <figure>
+              <h3 id="intelligence">Intelligence</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+            <figure>
+              <h3 id="wisdom">Wisdom</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+            <figure>
+              <h3 id="charisma">Charisma</h3>
+              <p class="stats">
+                <!-- stats go here-->
+              </p>
+            </figure>
+          </section>
 
+          <section id="inventory">
+            <h3>Inventroy</h3>
+          </section>
 
-        <section id="inventory">
-          <h3>Inventroy</h3>
-        </section>
+          <section id="middle-container">
+            <div id="health-box">
+              <section id="physical-stats">
+                <h3>Age</h3>
+                <h3>Height</h3>
+                <h3>Weight</h3>
+                <span></span>
+                <span></span>
+                <span></span>
+              </section>
 
-        <section id="middle-container">
-          <div id="health-box">
-            <section id="physical-stats">
-              <h3>Age</h3>
-              <h3>Height</h3>
-              <h3>Weight</h3>
-              <span></span>
-              <span></span>
-              <span></span>
+              <section id="health">
+                <h3>HP</h3>
+                <h3>AC</h3>
+                <h3>Gold</h3>
+                <p id="hp">
+                  <!-- stats go here-->
+                </p>
+                <p id="ac">
+                  <!-- stats go here-->
+                </p>
+                <p id="gold">
+                  <!-- stats go here-->
+                </p>
+
+              </section>
+            </div>
+
+            <section id="traits">
+              <h3>Traits</h3>
+              <p>
+              <!-- charcter abilities go here-->
+              </p>
             </section>
 
-            <section id="health">
-              <h3>HP</h3>
-              <h3>AC</h3>
-              <h3>Gold</h3>
-              <p id="hp">
-                <!-- stats go here-->
-              </p>
-              <p id="ac">
-                <!-- stats go here-->
-              </p>
-              <p id="gold">
-                <!-- stats go here-->
-              </p>
-
+            <section id="backstory">
+              <h3>Backstory</h3>
+              <textarea></textarea>
             </section>
-          </div>
+          </secction>
+        </div>
 
-          <section id="traits">
-            <h3>Traits</h3>
+        <div class="clearfix"></div>
+
+        <section id="bottom-container">
+          <section id="languages">
+            <h3>Languages</h3>
             <p>
-            <!-- charcter abilities go here-->
+              <!-- character languages go here -->
             </p>
           </section>
 
-          <section id="backstory">
-            <h3>Backstory</h3>
-            <textarea></textarea>
+          <section id="attacks">
+            <h3>Attacks and Spells</h3>
           </section>
-        </secction>
+        </section>
       </div>
-
-      <div class="clearfix"></div>
-
-      <section id="bottom-container">
-        <section id="languages">
-          <h3>Languages</h3>
-          <p>
-            <!-- character languages go here -->
-          </p>
-        </section>
-
-        <section id="attacks">
-          <h3>Attacks and Spells</h3>
-        </section>
-      </section>
-
-
-
       <canvas id="stat-chart" width="960" height:"400"></canvas>
     </main>
     <script src="form.js"></script>
