@@ -102,6 +102,11 @@ header>div>ul>li>img {
   width: 200px;
 }
 
+.login image {
+  height: 100px;
+  width: 100px;
+}
+
 .login button {
   width: 100px;
   height: 25px;
