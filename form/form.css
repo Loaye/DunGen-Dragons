@@ -212,3 +212,10 @@ h2{
 li{
   margin:5px;
 }
+
+canvas {
+  outline: 1px solid black;
+  margin-top: 15px;
+  height: 200px;
+  width: 200px;
+}

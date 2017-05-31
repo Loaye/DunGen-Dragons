@@ -77,13 +77,11 @@ function insertChart(){
       datasets: [{
         label: 'Stats',
         data: finalStats,
-        backgroundColor: 'blue',
+        backgroundColor: 'rgba(1, 1, 1, 0.5)',
         borderWidth: 1
       }]
     },
-    options: {
-      scales: {
-      }
+    options: {responvise: false
     }
   });
 }
