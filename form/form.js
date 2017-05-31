@@ -3,6 +3,7 @@ var charClass;
 var charRace;
 var charLanguages;
 var charTraits;
+var charName;
 var finalStats = [];
 
 function unPack() {
@@ -11,6 +12,7 @@ function unPack() {
     charRace = JSON.parse(sessionStorage.charRace);
     charLanguages = JSON.parse(sessionStorage.charLanguages);
     charTraits = JSON.parse(sessionStorage.charTraits);
+    charName = JSON.parse(sessionStorage.charName);
     restrictValues();
   }
 }
@@ -61,6 +63,12 @@ function insertTraits(){
   traitTags.appendChild (list);
 }
 
+function insertName(){
+  var nameTags = document.getElementById('char-name');
+  nameTags.value = charName;
+}
+
 insertStats();
 insertLanguages();
 insertTraits();
+insertName();
