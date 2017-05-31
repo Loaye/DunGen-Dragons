@@ -68,7 +68,28 @@ function insertName(){
   nameTags.value = charName;
 }
 
+function insertChart(){
+  var ctx = document.getElementById('stat-chart');
+  new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Charisma', 'Constitution', 'Dexterity', 'Intelligence', 'Strength', 'Wisdom'],
+      datasets: [{
+        label: 'Stats',
+        data: finalStats,
+        backgroundColor: 'blue',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+      }
+    }
+  });
+}
+
 insertStats();
 insertLanguages();
 insertTraits();
 insertName();
+insertChart();
