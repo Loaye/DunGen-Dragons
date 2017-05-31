@@ -5,6 +5,7 @@ var allProfiles;
 
 function packagePros() {
   localStorage.allProfiles = JSON.stringify(allProfiles);
+
 }
 
 function unPackPros() {
@@ -21,7 +22,6 @@ function Profile(userName, passWord, firstName, lastName, email) {
   this.email = email;
   this.characters = [];
   allProfiles[userName] = this;
-  document.location.url = '..home/home.url';
   packagePros();
 }
 
@@ -32,6 +32,21 @@ function profileSubmit(e) {
   var firstName = event.target.first.value;
   var lastName = event.target.last.value;
   var email = event.target.email.value;
-  (allProfiles[userName] === undefined) ? new Profile(userName, passWord, firstName, lastName, email) : alert('That username is already in use!')
+
+  if (allProfiles[userName] != undefined) {
+    alert('That user name is already in use');
+    return;
+  }
+  if(event.target.pass.value !== event.target.conpass.value) {
+
+    alert('You passwords must match.');
+    return;
+  } else {
+    new Profile(userName, passWord, firstName, lastName, email);
+    alert('Your profile has been created!');
+    document.location.href = '../home/index.html';
+  }
   profileForm.reset();
 }
+
+profileForm.addEventListener('submit', profileSubmit);
