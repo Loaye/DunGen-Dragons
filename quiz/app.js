@@ -35,6 +35,9 @@ function raceHandler(raceindex) {
 function classHandler(raceindex) {
   return function () {
     chosenClass = raceindex;
+    generateRandomLanguage();
+    generateRandomTraits(chosenRace);
+    generateRandomName(chosenRace);
     packageValues();
 
     document.location.href = '../form/form.html';
@@ -44,6 +47,9 @@ function classHandler(raceindex) {
 function packageValues() {
   sessionStorage.charRace = JSON.stringify(chosenRace);
   sessionStorage.charClass = JSON.stringify(chosenClass);
+  sessionStorage.charLanguages = JSON.stringify(ranLanguage);
+  sessionStorage.charTraits = JSON.stringify(ranTraits);
+  sessionStorage.charName = JSON.stringify(ranName);
 }
 
 function createFirstHandler() {
