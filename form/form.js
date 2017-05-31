@@ -70,7 +70,7 @@ function insertName(){
 
 function insertDescription(){
   var charDescTags = document.getElementById('description');
-  charDescTags.innerHTML = charRace.description + charClass.description;
+  charDescTags.innerHTML = charRace.description + ' ' + charClass.description;
 }
 
 function insertChart(){
