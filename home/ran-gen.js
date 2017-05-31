@@ -18,6 +18,7 @@ function generateRandomPlayer(){
   generateRandomTraits(ranRace);
   generateRandomName(ranRace);
   packageRanValues();
+  document.location.href = '../form/form.html';
 }
 
 function generateRandomLanguage(){
@@ -56,4 +57,4 @@ function packageRanValues(){
   sessionStorage.charName = JSON.stringify(ranName);
 }
 
-ranGen.addEventListener('click', generateRandomPlayer());
+ranGen.addEventListener('click', generateRandomPlayer);
