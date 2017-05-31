@@ -2,6 +2,8 @@
 var charClass;
 var charRace;
 var charLanguages;
+var charTraits;
+var charName;
 var finalStats = [];
 
 function unPack() {
@@ -9,6 +11,8 @@ function unPack() {
     charClass = JSON.parse(sessionStorage.charClass);
     charRace = JSON.parse(sessionStorage.charRace);
     charLanguages = JSON.parse(sessionStorage.charLanguages);
+    charTraits = JSON.parse(sessionStorage.charTraits);
+    charName = JSON.parse(sessionStorage.charName);
     restrictValues();
   }
 }
@@ -38,14 +42,33 @@ function insertStats() {
 }
 
 function insertLanguages(){
-  var langTags = document.getElementsByClassName('char-languages');
+  var langTags = document.getElementById('char-languages');
   var list = document.createElement('ul');
+  var listArr = [];
   for (var i = 0; i < charLanguages.length; i++){
-    list.innerHTML = '<li>' + charLanguages[i] + '</li>';
-    console.log(list);
+    listArr.push('<li>' + charLanguages[i] + '</li>');
   }
-  langTags.appendChild = list;
+  list.innerHTML = listArr.join('');
+  langTags.appendChild (list);
+}
+
+function insertTraits(){
+  var traitTags = document.getElementById('char-traits');
+  var list = document.createElement('ul');
+  var listArr = [];
+  for (var i = 0; i < charTraits.length; i++){
+    listArr.push('<li>' + charTraits[i] + '</li>');
+  }
+  list.innerHTML = listArr.join('');
+  traitTags.appendChild (list);
+}
+
+function insertName(){
+  var nameTags = document.getElementById('char-name');
+  nameTags.value = charName;
 }
 
 insertStats();
 insertLanguages();
+insertTraits();
+insertName();
