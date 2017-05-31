@@ -1,32 +1,37 @@
 'use strict';
 
-var controller {
-  loggedIn : false;
-  currentUser : undefined;
+var profileForm = document.getElementById('new profile');
+var allProfiles;
+
+function packagePros() {
+  localStorage.allProfiles = JSON.stringify(allProfiles);
 }
 
-var allProfiles = {}
-
-var form = document.getElementsByClassName('login')[0];
-
-
-
-function invalid() {
-  alert('Invalid user name or password')
-  form.getElementsByTagName('input').forEach((el, ind, formArr) => formArr[ind].style.outline = '2px solid red');
+function unPackPros() {
+  allProfiles = JSON.parse(localStorage.allProfiles);
 }
 
+(localStorage.allProfiles === undefined) ? allProfiles = {} : unPackPros();
 
-function valid(userName) {
-  controller.currentUser = allProfiles[userName]
-  controller.loggedIn = true;
+function Profile(userName, passWord, firstName, lastName, email) {
+  this.userName = userName;
+  this.passWord = passWord;
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.email = email;
+  this.characters = [];
+  allProfiles[userName] = this;
+  document.location.url = '..home/home.url';
+  packagePros();
 }
 
-function validateUser(e) {
+function profileSubmit(e) {
   e.preventDefault();
-  var userName = target.event.user.value;
-  var passWord = target.event.passWord.value;
-
-  (allProfiles[userName] != undefined && allProfiles[userName].passWord === passWord) ? valid() : invalid();
-
+  var userName = event.target.user.value;
+  var passWord = event.target.pass.value;
+  var firstName = event.target.first.value;
+  var lastName = event.target.last.value;
+  var email = event.target.email.value;
+  (allProfiles[userName] === undefined) ? new Profile(userName, passWord, firstName, lastName, email) : alert('That username is already in use!')
+  profileForm.reset();
 }
