@@ -6,6 +6,10 @@
   clear: both;
 }
 
+img url('../img/print'){
+
+}
+
 body{
   background: black url('../img/moon.jpg');
   background-attachment: fixed;
@@ -162,10 +166,9 @@ h2{
 }
 
 #backstory textarea{
-  width: 600px;
-  height: 190px;
-  padding:0px;
-  margin-left:7px;
+  width: 614px;
+  height: 205px;
+  padding: 0;
   resize: none;
   font: 15px helvetica;
   border: none;
@@ -214,9 +217,22 @@ li{
   margin:5px;
 }
 
-canvas {
-  outline: 1px solid gray;
+canvas{
+  outline: 1px solid black;
   margin-top: 15px;
   height: 200px;
   width: 200px;
+}
+
+footer{
+  margin: 0 auto;
+  background: black;
+}
+
+footer img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
