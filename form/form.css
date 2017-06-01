@@ -12,7 +12,7 @@ body{
 }
 
 h1{
-  font: 32px fantasy;
+  font: 32px 'Fondamento', cursive;
 }
 
 main{
@@ -23,21 +23,26 @@ main{
   padding: 50px 3px;
 }
 
+label, h3{
+  font:14px 'Fondamento', cursive;
+}
+
 h2{
-  font: 30px fantasy;
+  font: 30px 'Fondamento', cursive;
   padding-bottom: 10px;
 }
 
 #char-image{
   float:left;
-  width:100px;
-  height:100px;
+  width:150px;
+  height:150px;
+  border:1px solid gray;
 }
 
 #char-meta{
   display: inline-block;
   float:left;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left:6px;
 }
 
@@ -170,6 +175,7 @@ h2{
   margin-top: 15px;
   border: 1px solid grey;
   width: 614px;
+  padding-bottom:15px;
 }
 
 #backstory h3{
