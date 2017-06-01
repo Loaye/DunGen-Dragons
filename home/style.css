@@ -13,7 +13,7 @@
   margin-left: 80px;
   margin-top: 30px;
   font-size: 30px;
-  font-family: fantasy;
+  font-family: 'Fondamento', cursive;
 }
 
 .main.option {
@@ -61,7 +61,7 @@
   padding-top: 20px;
   margin-top: 165px;
   font-size: 30px;
-  font-family: fantasy;
+  font-family: 'Fondamento', cursive;
   transition: .35s all;
 }
 
@@ -92,5 +92,5 @@ button[name="instant"] {
   border-radius: 50px;
   color: black;
   font-size: 40px;
-  font-family: fantasy;
+  font-family: 'Fondamento', cursive;
 }
