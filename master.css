@@ -41,7 +41,7 @@ header>div>h1 {
   margin-top: 10px;
   margin-left: 20px;
   color: white;
-  font-family: fantasy;
+  font-family: 'Fondamento', cursive;
 }
 
 .header.border {
@@ -100,6 +100,11 @@ header>div>ul>li>img {
 
 .login input {
   width: 200px;
+}
+
+.login image {
+  height: 100px;
+  width: 100px;
 }
 
 .login button {

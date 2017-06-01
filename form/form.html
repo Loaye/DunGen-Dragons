@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
   <html>
   <head>
     <title>Your Character</title>
+    <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="form.css">
@@ -13,7 +13,7 @@
         <div class="header menu">
           <img src="../img/menu.png" alt="">
         </div>
-        <h1>DunGens & Dragons</h1>
+        <h1>DunGens &amp Dragons</h1>
         <div class="header border">
         </div>
         <ul>
@@ -21,8 +21,9 @@
             <img src="../img/gear.png" alt="">
             <form class="login">
               <input type="text" name="user" placeholder="Enter User Name" required>
-              <input type="text" name="password" placeholder="Enter Password" required="password">
+              <input type="text" name="password" placeholder="Ente Password" required="password">
               <button type="submit" name="button">Log In</button>
+              <a href="../profile/profile.html"><button type="button" name="register">Register</button></a>
             </form>
           </li>
           <li class="header list"></li>
@@ -30,24 +31,30 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main id="print_area">
       <section class="hidden master">
+
         <div class="hidden dropdown">
           <a href="../home/index.html"><p>Home</p></a>
         </div>
+
         <div class="hidden dropdown">
           <p>About Us</p>
         </div>
+
         <div class="hidden dropdown">
-          <p>Contact Us</p>
+          <a href="mailto:edwinjdelrio@gmail.com"><p>Contact Us</p></a>
         </div>
+
         <div class="hidden dropdown">
-          <a href="https://www.paypal.com/us/home"><p>Donate/ Give Money</p></a>
+          <a href="https://www.paypal.me/ejdelrio"><p>Donate/ Give Money</p></a>
         </div>
       </section>
 
       <div id="form-fix">
         <h2>Dungeons and Dragons Character Sheet</h2>
+
+        <img id="char-image" src="https://placehold.it/100x100">
 
         <fieldset id="char-meta">
           <label for="char-name">Character Name</label>
@@ -204,10 +211,16 @@
       </div>
       <canvas id="stat-chart"></canvas>
     </main>
-    <script src="chart.js">
 
+    <footer>
+      <img src="../img/print.jpg" onclick="window.print()">
+    </footer>
+
+    <script src="chart.js">
     </script>
     <script src="../home/app.js"></script>
     <script src="form.js"></script>
+    <script src="../profile/login.js"></script>
+    <script src="../profile/profile.js"></script>
   </body>
 </html>

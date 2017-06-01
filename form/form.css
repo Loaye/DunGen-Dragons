@@ -6,13 +6,17 @@
   clear: both;
 }
 
+img url('../img/print'){
+
+}
+
 body{
   background: black url('../img/moon.jpg');
   background-attachment: fixed;
 }
 
 h1{
-  font: 32px fantasy;
+  font: 32px 'Fondamento', cursive;
 }
 
 main{
@@ -23,23 +27,43 @@ main{
   padding: 50px 3px;
 }
 
+label, h3{
+  font:14px 'Fondamento', cursive;
+}
+
 h2{
-  font: 30px fantasy;
+  font: 30px 'Fondamento', cursive;
   padding-bottom: 10px;
+}
+
+#char-image{
+  float:left;
+  width:150px;
+  height:150px;
+  border:1px solid gray;
 }
 
 #char-meta{
   display: inline-block;
+  float:left;
+  margin-top: 100px;
+  margin-left:6px;
+}
+
+#char-meta label:last-of-type{
+  margin-left: 6px;
 }
 
 #char-meta input:last-child{
   width: 50px;
+  margin-left:6px;
 }
 
 #char-background{
-  float: right;
+  float: left;
   width: 550px;
   height: 20px;
+  margin-top: 10px;
 }
 
 #char-background label{
@@ -155,6 +179,7 @@ h2{
   margin-top: 15px;
   border: 1px solid grey;
   width: 614px;
+  padding-bottom:15px;
 }
 
 #backstory h3{
@@ -213,9 +238,22 @@ li{
   margin:5px;
 }
 
-canvas {
+canvas{
   outline: 1px solid black;
   margin-top: 15px;
   height: 200px;
   width: 200px;
+}
+
+footer{
+  margin: 0 auto;
+  background: black;
+}
+
+footer img{
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }

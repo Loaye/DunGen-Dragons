@@ -5,7 +5,7 @@
     <title>DunGens &amp Dragons | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
     <link rel="stylesheet" href="../master.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
   </head>
   <body>
     <header>
@@ -19,14 +19,12 @@
         <ul>
           <li class="header list">
             <img src="../img/gear.png" alt="">
-
             <form class="login">
               <input type="text" name="user" placeholder="Enter User Name" required>
               <input type="text" name="password" placeholder="Ente Password" required="password">
               <button type="submit" name="button">Log In</button>
               <a href="../profile/profile.html"><button type="button" name="register">Register</button></a>
             </form>
-
           </li>
           <li class="header list"></li>
           <li class="header list"></li>
@@ -35,7 +33,7 @@
     </header>
     <main>
       <section class="hidden master">
-
+        
         <div class="hidden dropdown">
           <a href="../home/index.html"><p>Home</p></a>
         </div>
@@ -51,32 +49,53 @@
         <div class="hidden dropdown">
           <a href="https://www.paypal.me/ejdelrio"><p>Donate/ Give Money</p></a>
         </div>
-      </section>
-      <section class="main master">
-
-        <h3>Which image is most appealing to you?</h3>
-
-        <ul>
-          <li><img src="../img/survey/place_volcano.jpg" alt=""></li>
-          <li><img src="../img/survey/place_forest.jpg" alt=""></li>
-          <li><img src="../img/survey/place_cave.jpg" alt=""></li>
-          <li><img src="../img/survey/place_village.jpg" alt=""></li>
-          <li><img src="../img/survey/place_battlefield.jpg" alt=""></li>
-          <li><img src="../img/survey/place_castle.jpg" alt=""></li>
-        </ul>
 
       </section>
+      <section class="center">
+        <div>
+          <img src="../img/large_pro.jpg" alt="">
+          <form id="new profile">
 
+            <fieldset>
+              <label for="First Name">First Name</label>
+              <input type="text" name="first" placeholder="Enter first name" required>
+            </fieldset>
+
+            <fieldset>
+              <label for="Last Name">Last Name</label>
+              <input type="text" name="last" placeholder="Enter last name" required>
+            </fieldset>
+
+            <fieldset>
+              <label for="Email Address">Email Address</label>
+              <input type="text" name="email" placeholder="Enter email address" required="email">
+            </fieldset>
+
+            <fieldset>
+              <label for="User Name">User Name</label>
+              <input type="text" name="user" placeholder="Enter a valid user name" required>
+            </fieldset>
+
+            <fieldset>
+              <label for="Password">Password</label>
+              <input type="text" name="pass" placeholder="Enter a valid password" required="password">
+            </fieldset>
+
+            <fieldset>
+              <label for="Confirm">Confirm Password</label>
+              <input type="text" name="conpass" placeholder="Confirm password" required>
+            </fieldset>
+
+            <button type="submit" name="create">Create</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer>
 
+    <footer>
     </footer>
+    <script src="profile.js"></script>
     <script src="../home/app.js"></script>
-    <script src="../constructor-info.js"></script>
-    <script src="../constructor.js"></script>
-    <script src="../home/ran-gen.js"></script>
-    <script src="../quiz/app.js"></script>
     <script src="../profile/login.js"></script>
-    <script src="../profile/profile.js"></script>
   </body>
 </html>

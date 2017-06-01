@@ -1,0 +1,65 @@
+
+.center {
+  float: left;
+  width: 850px;
+  height: 800px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.center>div{
+  width: 750px;
+  height: 750px;
+  margin: 50px;
+  background: #222222;
+  border: 4px solid #222222;
+  border-radius: 50px;
+}
+
+.center>div>img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: 275px;
+  margin-top: 50px;
+}
+
+.center * {
+  outline: none;
+  border: none;
+}
+
+.center>div> form {
+  float: left;
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
+  border: none;
+  background: black;
+  border-radius: 50px;
+}
+
+.center>div> form input, .center>div> form label {
+  float: left;
+  width: 300px;
+  height: 20px;
+  margin-left: 225px;
+  border: none;
+}
+.center>div> form label {
+  margin-top: 5px;
+  color: white;
+}
+
+.center>div> form button {
+  float: left;
+  margin-left: 300px;
+  margin-top: 10px;
+  width: 150px;
+  height: 25px;
+  background: orange;
+  color: black;
+  border-radius: 100px;
+  border: none;
+  font-size: 20px;
+}

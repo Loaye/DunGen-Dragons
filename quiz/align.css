@@ -1,0 +1,25 @@
+.main.master h3 {
+  color: white;
+  font-size: 30px;
+  font-family: fantasy;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  float: left;
+}
+
+.main.master ul {
+  padding: 0px;
+  margin: 0px;
+  width: 690px;
+  margin-left: 105px;
+}
+
+#answers li {
+  float: none;
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+}

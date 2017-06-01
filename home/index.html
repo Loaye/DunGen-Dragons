@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>DunGens & Dragons | Home</title>
+    <title>DunGens &amp Dragons | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
     <link rel="stylesheet" href="../master.css">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -12,7 +13,7 @@
         <div class="header menu">
           <img src="../img/menu.png" alt="">
         </div>
-        <h1>DunGens & Dragons</h1>
+        <h1>DunGens &amp Dragons</h1>
         <div class="header border">
         </div>
         <ul>
@@ -22,6 +23,7 @@
               <input type="text" name="user" placeholder="Enter User Name" required>
               <input type="text" name="password" placeholder="Enter Password" required="password">
               <button type="submit" name="button">Log In</button>
+              <a href="../profile/profile.html"><button type="button" name="register">Register</button></a>
             </form>
           </li>
           <li class="header list"></li>
@@ -31,18 +33,23 @@
     </header>
     <main>
       <section class="hidden master">
+
         <div class="hidden dropdown">
           <a href="../home/index.html"><p>Home</p></a>
         </div>
+
         <div class="hidden dropdown">
           <p>About Us</p>
         </div>
+
         <div class="hidden dropdown">
-          <p>Contact Us</p>
+          <a href="mailto:edwinjdelrio@gmail.com"><p>Contact Us</p></a>
         </div>
+
         <div class="hidden dropdown">
-          <a href="https://www.paypal.com/us/home"><p>Give Us Money!</p></a>
+          <a href="https://www.paypal.me/ejdelrio"><p>Donate/ Give Money</p></a>
         </div>
+
       </section>
       <section class="main master">
         <h2>The premier Dungeons and Dragons Character Generator!</h2>
@@ -71,10 +78,11 @@
     <footer>
 
     </footer>
-    <script src="../description.js"></script>
-    <script src="../form/names.js"></script>
+    <script src="../constructor-info.js"></script>
     <script src="../constructor.js"></script>
     <script src="ran-gen.js"></script>
+    <script src="../profile/login.js"></script>
+    <script src="../profile/profile.js"></script>
     <script src="app.js">
     </script>
   </body>

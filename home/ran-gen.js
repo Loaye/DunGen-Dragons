@@ -7,8 +7,6 @@ var ranName;
 var ranTraits = [];
 var ranLanguage = ['Common', ];
 
-var allLanguages = ['Abyssal', 'Aquan', 'Auran', 'Celestial', 'Deep Speach', 'Draconic', 'Druidic', 'Dwarvish', 'Elvish', 'Giant', 'Gnomish', 'Goblin', 'Gnoll', 'Halfling', 'Ignan', 'Infernal', 'Orc', 'Primoridial', 'Sylvan', 'Terran', 'Undercommon'];
-
 function generateRandomPlayer(){
   var classSelector = Math.floor(Math.random() * allClasses.length);
   var raceSelector = Math.floor(Math.random() * allRaces.length);
@@ -27,16 +25,11 @@ function generateRandomLanguage(){
 }
 
 function generateRandomTraits(thisRace){
-  var traitNumber = Math.floor(Math.random() * 3 + 1);
-  while(ranTraits.length < traitNumber){
-    var traitSelector = Math.floor(Math.random() * thisRace.traits.length);
-    if(ranTraits.includes(thisRace.traits[traitSelector])){
-      ranTraits.push(thisRace.traits[traitSelector - 1]);
-    }else if(thisRace === human){
-      return ranTraits.push(thisRace.traits[0]);
-    }else{
-      ranTraits.push(thisRace.traits[traitSelector]);
-    }
+  var traitSelector = Math.floor(Math.random() * thisRace.traits.length);
+  if(thisRace === human){
+    ranTraits.push(thisRace.traits[0]);
+  }else{
+    ranTraits.push(thisRace.traits[traitSelector]);
   }
 }
 
