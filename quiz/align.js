@@ -1,7 +1,10 @@
 'use strict';
 
 // var firstAlign = [['Lawful', 0], ['Neutral', 0], ['Chaotic', 0]];
+var firstAlign = [0, 0, 0];
+
 // var secondAlign = [['Good', 0], ['Neutral', 0], ['Evil', 0]];
+var secondAlign = [0, 0, 0];
 
 var questionText = document.getElementById('question');
 var answerText = document.getElementById('answers');
@@ -15,7 +18,7 @@ function Question(question, answers, values){
 
 var qArr = [];
 
-new Question('Rules are...', ['1. Necessary and must be followed to maintain order.', '2. Generally fine, but sometimes get in the way of what needs to be done.', '3. A list of suggestions for how not to live an interesting life.'], ['Lawful', 'Neutral', 'Chaotic']);
+new Question('Rules are...', ['1. Necessary and must be followed to maintain order.', '2. Generally fine, but sometimes get in the way of what needs to be done.', '3. A list of suggestions for how not to live an interesting life.'], [0, 1, 2]);
 
 new Question('You strive for...', ['1. Dominance over others', '2. Balance in all things', '3. Peace and prosperity', '4. Nothing in particular'], ['Evil', 'Neutral', 'Good', 'Neutral']);
 
@@ -32,7 +35,7 @@ new Question('A friend of yours is arrested and all evidence points to their gui
 new Question('Your hometown is besieged by bandits. You...', ['1. Take up arms and fight!', '2. Hole up in the local tavern, have a pint, and wait for this whole thing to blow over', '3. Join the bandits. You can even point out the best houses to loot!'], ['Lawful', 'Neutral', 'Evil']);
 
 function quiz(){
-  displayQuestion(qArr[0]);
+  displayQuestion(0);
 }
 
 function displayQuestion(q) {
@@ -40,16 +43,38 @@ function displayQuestion(q) {
   answerText.innerHTML = '';
 
   for (var i = 0; i < qArr[q].answers.length; i++) {
-    var listAnswer = document.createElement('li');
-    listAnswer.innerHTML = qArr[q].answers[i];
-    answerText.appendChild(listAnswer).addEventListener('click', function(){
-      console.log(qArr[q].values[i]);
-      if(q < 7){
-        displayQuestion(q+1);
-      } else {
-        console.log('End of quiz!');
-      }
-    });
+    var newLi = document.createElement('li');
+    newLi.setAttribute('id', 'answer' + i);
+    newLi.innerHTML = qArr[q].answers[i];
+    answerText.appendChild(newLi);
+  }
+
+  createAnswerHandler(q);
+}
+
+function createAnswerHandler(q){
+  console.log('q: ', q);
+  var answerLi;
+  for (var i = 0; i < qArr[q].answers.length; i++){
+    answerLi = document.getElementById('answer' + i);
+    if (typeof window.addEventListener === 'function'){
+      (function (_answerLi) {
+        answerLi.addEventListener('click', function(){
+          console.log(_answerLi);
+          if(q < 7){
+            displayQuestion(q + 1);
+          } else {
+            questionText.innerHTML = 'End of quiz!';
+            answerText.innerHTML = '';
+            scoreQuiz();
+          }
+        });
+      })(answerLi);
+    }
+    // answerList.addEventListener('click', function(){
+    //   console.log('i: ', i);
+    //   console.log(answerList);
+    //   var ansIdx = qArr[q].values[i];
   }
 }
 
