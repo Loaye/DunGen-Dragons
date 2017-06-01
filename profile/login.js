@@ -60,6 +60,7 @@ function logOutUser(e) {
   }
   form.innerHTML = oldForm;
   removeLogOutHandler();
+  sessionStorage.clear();
   logInUser();
 }
 
