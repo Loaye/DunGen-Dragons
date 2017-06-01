@@ -16,6 +16,11 @@ header {
   border-bottom: 1px solid white;
 }
 
+#wrapper{
+  width:1300px;
+  margin:0 auto;
+}
+
 a{
   text-decoration: none;
 }
@@ -147,7 +152,7 @@ header>div>ul>li>img {
   margin: 0px;
   border: 0px;
   font-size: 20px;
-  font-family: fantasy;
+  font-family: 'Fondamento', cursive;
   color: white;
 }
 

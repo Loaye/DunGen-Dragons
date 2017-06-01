@@ -4,6 +4,7 @@ var charRace;
 var charLanguages;
 var charTraits;
 var charName;
+var charAlignment;
 var charImg;
 var finalStats = [];
 
@@ -14,6 +15,7 @@ function unPack() {
     charLanguages = JSON.parse(sessionStorage.charLanguages);
     charTraits = JSON.parse(sessionStorage.charTraits);
     charName = JSON.parse(sessionStorage.charName);
+    charAlignment = sessionStorage.charAlignment;
     restrictValues();
   }
 }
@@ -25,6 +27,8 @@ function restrictValues() {
   document.getElementsByName('class')[0].disabled = true;
   document.getElementsByName('race')[0].value = charRace.race;
   document.getElementsByName('race')[0].disabled = true;
+  document.getElementsByName('alignment')[0].value = charAlignment;
+  document.getElementsByName('alignment')[0].disabled = true;
 }
 
 function randomStats() {
