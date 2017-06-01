@@ -78,17 +78,17 @@ var clericImg = ['DB_Cleric.jpg', 'Dwarf_Cleric.jpg', 'Elf_Cleric.jpg', 'Halflin
 //Mage
 var mageDesc = 'What mages (think wizard) lack in combat prowess and armor they make up with a broad range of magical spells and abilities learned through years of practice and training. Through their spell casting ability powerful mages can control the battlefield, using spells that affect wide areas, often hindering enemies, while also learning to use powerful rituals of arcane power.';
 
-var mageImg = ['DB_Mage.jpg', 'Dwarf_Mage.jpg', 'Elf_Mage.jpg', 'Halfling_Mage.jpg', 'HO_Mage.jpg', 'Human_Mage.jpg'];
+var mageImg = ['DB_Mage.jpg', 'Dwarf_Mage.jpg', 'Elf_Mage.jpg', 'Halfling_Mage.jpg', 'HO_Mage.jpeg', 'Human_Mage.jpg'];
 
 //Ranger
 var rangerDesc = 'Rangers are warriors who excel at exploring the fringes of civilization and hunting down deadly monsters. Hunters, scouts, trappers, and assassins, rangers can be found wherever civilization bordered the wilderness. To aid them in their outback treks, rangers are trained in a number of combat techniques, survival skills, and even magic.';
 
-var rangerImg = ['DB_Ranger.jpg', 'Dwarf_Ranger.jpg', 'Elf_Ranger.jpg', 'Halfling_Ranger.jpg', 'HO_Ranger.jpg', 'Human_Ranger.jpg'];
+var rangerImg = ['DB_Ranger.jpg', 'Dwarf-Ranger.jpg', 'Elf_Ranger.jpg', 'Halfling_Ranger.jpg', 'HO_Ranger.jpg', 'Human_Ranger.jpg'];
 
 //Rogue
 var rogueDesc = 'Rogues are versatile masters of stealth, combat, and various skillful tricks. Where other adventurers have the power to defeat their enemies, rogues used their wits and their natural resourcefulness to exploit their foes\' vulnerabilities as well as to lead their allies safely through dangerous environments, disarming traps and opening lock along the way.';
 
-var rogueImg = ['DB_Rogue.jpg', 'Dwarf_Rogue.jpg', 'Elf_Rogue.jpg', 'Halfling_Rogue.jpg', 'HO_Rogue.jpg', 'Human_Rogue.jpg'];
+var rogueImg = ['DB_Rougue.jpg', 'Dwarf_Rogue.jpg', 'Elf_Rogue.jpg', 'Halfling_Rogue.jpg', 'HO_Rogue.jpg', 'Human_Rogue.jpg'];
 
 //Warrior
 var warriorDesc = 'A skilled warrior defined the front line of any battle, breaking through enemy ranks and holding the line while their allies maneuvered. All warriors are trained to use virtually any armor or weapon the situation required; a warrior could use an axe, a rapier, or a greatsword with roughly equivalent skill. As well as being combat generalists, most warriors also specialized in a particular skillset, such as archery or combat magic.';

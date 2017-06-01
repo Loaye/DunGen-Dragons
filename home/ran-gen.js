@@ -1,9 +1,11 @@
 'use strict';
 
 var ranGen = document.getElementById('instant');
+var returning = document.getElementById('pro');
 var ranClass;
 var ranRace;
 var ranName;
+var ranAlignment;
 var ranTraits = [];
 var ranLanguage = ['Common', ];
 
@@ -51,3 +53,4 @@ function packageRanValues(){
 }
 
 ranGen.addEventListener('click', generateRandomPlayer);
+returning.addEventListener('click', sessionStorage.clear());
