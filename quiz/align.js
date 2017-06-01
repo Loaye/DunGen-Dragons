@@ -8,6 +8,8 @@ var secondAlign = [0, 0, 0];
 
 var questionText = document.getElementById('question');
 var answerText = document.getElementById('answers');
+var finishAlignment = document.getElementById('alignment');
+var startClassRace = document.getElementById('classRace');
 
 function Question(question, answers, firstVal, secondVal){
   this.question = question;
@@ -66,9 +68,10 @@ function createAnswerHandler(q){
           if(q < 7){
             displayQuestion(q + 1);
           } else {
-            questionText.innerHTML = 'End of quiz!';
-            answerText.innerHTML = '';
+            finishAlignment.classList.add('no-display');
+            startClassRace.classList.remove('no-display');
             scoreQuiz();
+            createFirstHandler();
           }
         });
       })(answerLi);
@@ -111,6 +114,7 @@ function scoreQuiz(){
     }
   }
   console.log('Your alignment is ' + playerAlign + '.');
+  sessionStorage.charAlignment = playerAlign;
 }
 
 function indexMax(arr) {
@@ -125,5 +129,3 @@ function indexMax(arr) {
   }
   return maxIndex;
 }
-
-displayQuestion(0);

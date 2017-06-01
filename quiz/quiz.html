@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div>
+      <div id="wrapper">
         <div class="header menu">
           <img src="../img/menu.png" alt="">
         </div>
@@ -49,16 +49,32 @@
       </section>
       <section class="main master">
 
-        <h3>Which image is most appealing to you?</h3>
-        <ul>
-          <li><img src="../img/survey/place_volcano.jpg" alt=""></li>
-          <li><img src="../img/survey/place_forest.jpg" alt=""></li>
-          <li><img src="../img/survey/place_cave.jpg" alt=""></li>
-          <li><img src="../img/survey/place_village.jpg" alt=""></li>
-          <li><img src="../img/survey/place_battlefield.jpg" alt=""></li>
-          <li><img src="../img/survey/place_castle.jpg" alt=""></li>
-        </ul>
+        <div id="classRace" class="no-display">
+          <h3>Which image is most appealing to you?</h3>
+          <ul>
+            <li><img src="../img/survey/place_volcano.jpg" alt=""></li>
+            <li><img src="../img/survey/place_forest.jpg" alt=""></li>
+            <li><img src="../img/survey/place_cave.jpg" alt=""></li>
+            <li><img src="../img/survey/place_village.jpg" alt=""></li>
+            <li><img src="../img/survey/place_battlefield.jpg" alt=""></li>
+            <li><img src="../img/survey/place_castle.jpg" alt=""></li>
+          </ul>
+        </div>
+
+        <div id="alignment" class=>
+          <h3 id="question">Placeholder</h3>
+          <ul id="answers">
+            <li>Answer 1</li>
+            <li>Answer 2</li>
+            <li>Answer 3</li>
+            <li>Answer 4</li>
+          </ul>
+        </div>
       </section>
+
+
+
+
 
     </main>
     <footer>
@@ -68,6 +84,7 @@
     <script src="../constructor-info.js"></script>
     <script src="../constructor.js"></script>
     <script src="../home/ran-gen.js"></script>
+    <script src="align.js"></script>
     <script src="../quiz/app.js"></script>
     <script src="../profile/login.js"></script>
     <script src="../profile/profile.js"></script>

@@ -64,5 +64,4 @@ function createLastHandler() {
   }
 }
 
-
-createFirstHandler();
+displayQuestion(0);
