@@ -1,5 +1,5 @@
 
-.master {
+.center {
   float: left;
   width: 850px;
   height: 800px;
@@ -7,7 +7,7 @@
   margin-left: 200px;
 }
 
-.master>div{
+.center>div{
   width: 750px;
   height: 750px;
   margin: 50px;
@@ -16,7 +16,7 @@
   border-radius: 50px;
 }
 
-.master>div>img {
+.center>div>img {
   float: left;
   width: 200px;
   height: 200px;
@@ -24,12 +24,12 @@
   margin-top: 50px;
 }
 
-.master * {
+.center * {
   outline: none;
   border: none;
 }
 
-.master>div> form {
+.center>div> form {
   float: left;
   width: 100%;
   height: 450px;
@@ -39,19 +39,19 @@
   border-radius: 50px;
 }
 
-.master>div> form input, .master>div> form label {
+.center>div> form input, .center>div> form label {
   float: left;
   width: 300px;
   height: 20px;
   margin-left: 225px;
   border: none;
 }
-.master>div> form label {
+.center>div> form label {
   margin-top: 5px;
   color: white;
 }
 
-.master>div> form button {
+.center>div> form button {
   float: left;
   margin-left: 300px;
   margin-top: 10px;

@@ -32,7 +32,7 @@ function buildNewForm() {
   proPic.style.height = '100px';
   proPic.style.width = '100px';
   proPic.style.borderRadius = '100px';
-  proPic.setAttribute('src', 'http://gazettereview.com/wp-content/uploads/2016/02/cosby-feature.jpg');
+  proPic.setAttribute('src', '../img/dragons.jpg');
 
   var oldButton = form.getElementsByTagName('button')[0];
   oldButton.innerHTML = 'Log Out';
