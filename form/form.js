@@ -4,6 +4,7 @@ var charRace;
 var charLanguages;
 var charTraits;
 var charName;
+var charImg;
 var finalStats = [];
 
 function unPack() {
@@ -73,6 +74,24 @@ function insertDescription(){
   charDescTags.innerHTML = charRace.description + ' ' + charClass.description;
 }
 
+function raceFind(){
+  var splitArr = charClass.charImg.map(name => name.split('_')[0]);
+  if(splitArr.includes(charRace.race)){
+    charImg = charClass.charImg[splitArr.indexOf(charRace.race)];
+  } else if(charRace.race === 'Dragonborn'){
+    charImg = charClass.charImg[0];
+  }else{
+    charImg = charClass.charImg[4];
+  }
+}
+
+function insertImg(){
+  raceFind();
+  var charImgTags = document.getElementById('char-image');
+  console.log('../img/character-img/' + charImg);
+  charImgTags.src = '../img/character-img/' + charImg;
+}
+
 function insertChart(){
   var ctx = document.getElementById('stat-chart');
   new Chart(ctx, {
@@ -96,4 +115,5 @@ insertLanguages();
 insertTraits();
 insertName();
 insertDescription();
+insertImg();
 insertChart();
