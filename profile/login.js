@@ -21,13 +21,17 @@ function valid(userName) {
   controller.currentUser = allProfiles[userName]
   controller.loggedIn = true;
   buildNewForm();
+  form.removeEventListener('submit', validateUser);
+  form.addEventListener('submit', logOutUser);
+  sessionStorage.logged = JSON.stringify(controller);
 }
 
 function buildNewForm() {
   var proPic = document.createElement('img');
   proPic.style.float = 'left';
-  proPic.style.height = '100px'
+  proPic.style.height = '100px';
   proPic.style.width = '100px';
+  proPic.style.borderRadius = '100px';
   proPic.setAttribute('src', 'http://gazettereview.com/wp-content/uploads/2016/02/cosby-feature.jpg');
 
   var oldButton = form.getElementsByTagName('button')[0];
@@ -45,7 +49,30 @@ function validateUser(e) {
   var passWord = event.target.password.value;
 
   (allProfiles[userName] != undefined && allProfiles[userName].passWord === passWord) ? valid(userName) : invalid();
-
 }
 
-form.addEventListener('submit', validateUser);
+function logOutUser(e) {
+  e.preventDefault();
+  controller.loggedIn = false;
+  controller.currentUser = undefined;
+  while (form.hasChildNodes()) {
+    form.removeChild(form.lastChild);
+  }
+  form.innerHTML = oldForm;
+  removeLogOutHandler();
+  logInUser();
+}
+
+function removeLogOutHandler() {
+  form.removeEventListener('submit', logOutUser);
+}
+
+function logInUser() {
+  form.addEventListener('submit', validateUser);
+}
+
+logInUser();
+
+if(sessionStorage.logged != undefined) {
+  valid(JSON.parse(sessionStorage.logged).currentUser);
+}
